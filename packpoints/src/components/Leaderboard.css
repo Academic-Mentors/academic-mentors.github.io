@@ -1,0 +1,20 @@
+.Leaderboard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+    
+table {
+border: 2px solid darkblue;
+width: 800px;
+height: 200px;
+}
+
+th {
+border-bottom: 1px solid black;
+}
+
+td {
+text-align: center;
+}
