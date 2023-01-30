@@ -53,7 +53,7 @@ const App = () => {
           setError(error);
         }
       )
-  }, [])
+  }, [hall])
 
   if (error) {
     return <div>Error: {error.message}</div>;
