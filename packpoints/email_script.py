@@ -51,4 +51,4 @@ for i in people.keys():
         s = people[i].email + " " + str(people[i].sid) + "\n"
         print(s)
         f.write(s)
-    # print(people[i].name, people[i].email, people[i].score, people[i].hall, people[i].sid)
+    print(people[i].name, people[i].email, people[i].score, people[i].hall, people[i].sid)

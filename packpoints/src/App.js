@@ -4,6 +4,8 @@ import Select from 'react-select'
 
 import { Leaderboard } from './components/Leaderboard';
 
+import './App.css'
+
 
 const url = 'https://script.google.com/macros/s/AKfycbx3EYsAmGUp3nql4gkRvcuGOTSaVL1ZO3UuNvTioxskYtY3UCcOML-_v_0mfLVJSlQ8/exec';
 
@@ -61,10 +63,10 @@ const App = () => {
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return <div className='App'>Loading...</div>;
   } else {
     return (
-      <div>
+      <div className='App'>
         <Leaderboard users={users}></Leaderboard>
         <Select options={options} onChange={handleHallChange}></Select>
         <h1>You have selected {hall.value}</h1>
