@@ -85,8 +85,8 @@ const App = () => {
     return (
       <div className='App'>
         <Leaderboard users={users}></Leaderboard>
-        <Select options={options} onChange={handleHallChange}></Select>
-        <h1>You have selected {hall.value}</h1>
+        <Select options={options} onChange={handleHallChange}/>
+        {(hall !== "") && <h1 className='hall-selector'>You have selected {hall.value}</h1>}
       </div>
     );
   }

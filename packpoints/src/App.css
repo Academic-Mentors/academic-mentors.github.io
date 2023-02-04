@@ -1,3 +1,8 @@
 .App {
     height:100vh;
 }
+
+.hall-selector {
+    text-align: center;
+    color: darkblue;
+}
