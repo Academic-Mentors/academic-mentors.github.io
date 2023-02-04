@@ -13,6 +13,6 @@ for x in lines:
     if x[0] not in prev_emails:
         prev_emails[x[0]] = x[1]
 
-for i in prev_emails:
-    send_email(i, prev_emails[i])
-    time.sleep(1)
+# for i in prev_emails:
+#     send_email(i, prev_emails[i])
+#     time.sleep(1)

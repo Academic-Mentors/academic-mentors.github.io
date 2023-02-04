@@ -1,6 +1,6 @@
 import requests
 import random
-from email_test import send_email
+# from email_test import send_email
 
 class Resident:
     def __init__(self, name, email, score, hall, sid):
@@ -53,3 +53,9 @@ for i in people.keys():
         print(s)
         f.write(s)
     print(people[i].name, people[i].email, people[i].score, people[i].hall, people[i].sid)
+
+f = open("id_data.txt", 'w')
+for person in people.keys():
+    s = str(people[person].sid) + ' ' + str(people[person].score) + ' ' + people[person].hall + '\n'
+    f.write(s)
+

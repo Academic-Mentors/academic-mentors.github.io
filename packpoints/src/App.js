@@ -1,4 +1,4 @@
-import { dataProcessing, sortByHall } from './database';
+import { dataProcessing, sortByHall, sheetProcessing } from './database';
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select'
 
@@ -49,6 +49,7 @@ const App = () => {
           setIsLoaded(true);
           setUsers(dataProcessing(result));
           setAllUsers(dataProcessing(result));
+          sheetProcessing();
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow

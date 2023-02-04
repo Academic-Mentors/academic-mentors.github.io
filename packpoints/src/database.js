@@ -65,8 +65,12 @@ export const dataProcessing = (result) => {
     return accounts.sort( compare );
 }
 
-export const sheetProcessing = (result) => {
-    
+const id_accounts = [];
+
+export const sheetProcessing = () => {
+    fetch('')
+    .then(response => response.text())
+    .then(text => console.log(text))
 }
 
 export const sortByHall = (data, hall) => {
