@@ -1,5 +1,6 @@
 import requests
 import random
+from email_test import send_email
 
 class Resident:
     def __init__(self, name, email, score, hall, sid):

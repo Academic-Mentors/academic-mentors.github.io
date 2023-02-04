@@ -65,15 +65,19 @@ export const dataProcessing = (result) => {
     return accounts.sort( compare );
 }
 
+export const sheetProcessing = (result) => {
+    
+}
+
 export const sortByHall = (data, hall) => {
-    console.log('Hello?')
+    // console.log('Hello?')
     hall = hall['value']
-    console.log(hall)
-    console.log(data);
+    // console.log(hall)
+    // console.log(data);
     let output = []
     for (let i = 0; i < data.length; i++) {
         if (data[i]['hall'] === hall || hall === 'All Halls') {
-            console.log('?')
+            // console.log('?')
             output.push(data[i]);
         }
     }
