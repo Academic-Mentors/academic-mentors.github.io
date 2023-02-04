@@ -1,4 +1,4 @@
-import { dataProcessing, sortByHall, sheetProcessing } from './database';
+import { sortByHall, sheetProcessing } from './database';
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select'
 
@@ -7,7 +7,7 @@ import { Leaderboard } from './components/Leaderboard';
 import './App.css'
 
 
-const url = 'https://script.google.com/macros/s/AKfycbx3EYsAmGUp3nql4gkRvcuGOTSaVL1ZO3UuNvTioxskYtY3UCcOML-_v_0mfLVJSlQ8/exec';
+// const url = 'https://script.google.com/macros/s/AKfycbx3EYsAmGUp3nql4gkRvcuGOTSaVL1ZO3UuNvTioxskYtY3UCcOML-_v_0mfLVJSlQ8/exec';
 
 
 
@@ -37,29 +37,45 @@ const App = () => {
     setUsers(sortByHall(allUsers, selectedOption));
   }
   
+  // useEffect(() => {
+  //   var requestOptions = {
+  //     method: 'GET',
+  //     redirect: 'follow'
+  //   };  
+  //   fetch(url, requestOptions)
+  //     .then(res => res.json())
+  //     .then(
+  //       (result) => {
+  //         setIsLoaded(true);
+  //         setUsers(dataProcessing(result));
+  //         setAllUsers(dataProcessing(result));
+  //         setUsers(sheetProcessing());
+  //         setAllUsers(sheetProcessing)
+  //       },
+  //       // Note: it's important to handle errors here
+  //       // instead of a catch() block so that we don't swallow
+  //       // exceptions from actual bugs in components.
+  //       (error) => {
+  //         setIsLoaded(true);
+  //         setError(error);
+  //       }
+  //     )
+  // }, [])
+
   useEffect(() => {
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow'
-    };  
-    fetch(url, requestOptions)
-      .then(res => res.json())
-      .then(
-        (result) => {
-          setIsLoaded(true);
-          setUsers(dataProcessing(result));
-          setAllUsers(dataProcessing(result));
-          sheetProcessing();
-        },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
-        (error) => {
-          setIsLoaded(true);
-          setError(error);
-        }
-      )
-  }, [])
+    fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/id_data.txt')
+      .then(response => response.text())
+      .then((text) => {
+        setIsLoaded(true)
+        setUsers(sheetProcessing(text))
+        setAllUsers(sheetProcessing(text))
+        console.log(users)
+      },
+      (error) => {
+        setIsLoaded(true);
+        setError(error);
+      })
+    }, [])
 
   if (error) {
     return <div>Error: {error.message}</div>;

@@ -7,15 +7,13 @@ export const Leaderboard = (props) => {
         <div className='Leaderboard'>
             <table>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
+                    <th>Id</th>
                     <th>Hall</th>
                     <th>Points</th>
                 </tr>
                 {props.users.map((user, key) => (
                     <tr key={key}>
-                        <td>{user.name}</td>
-                        <td>{user.email}</td>
+                        <td>{user.id}</td>
                         <td>{user.hall}</td>
                         <td>{user.points}</td>
                     </tr>

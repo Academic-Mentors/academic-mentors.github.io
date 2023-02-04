@@ -25,9 +25,9 @@
 //     return obj;
 // }
 
-const emails = new Set()
+// const emails = new Set()
 
-const accounts = []
+// const accounts = []
 
 const compare = (a, b) => {
     if ( a.points < b.points ){
@@ -39,38 +39,48 @@ const compare = (a, b) => {
     return 0;
 }
 
-export const dataProcessing = (result) => {
+// export const dataProcessing = (result) => {
 
-    for (const account of accounts) {
-        account['points'] = 0;
-    }
+//     for (const account of accounts) {
+//         account['points'] = 0;
+//     }
 
-    result = result['GoogleSheetData']
-    for (let i = 0; i < result.length; i++) {
-        let newResult = result[i]
-        for (let j = 1; j < newResult.length; j++) {
-            if (!emails.has(newResult[j][1])) {
-                emails.add(newResult[j][1])
-                accounts.push({email: newResult[j][1], points: newResult[j][2], name: newResult[j][3], hall: newResult[j][4]})
-            }
-            else {
-                for (const account of accounts) {
-                    if (account['email'] === newResult[j][1]) {
-                        account['points'] += newResult[j][2]
-                    }
-                }
-            }
+//     result = result['GoogleSheetData']
+//     for (let i = 0; i < result.length; i++) {
+//         let newResult = result[i]
+//         for (let j = 1; j < newResult.length; j++) {
+//             if (!emails.has(newResult[j][1])) {
+//                 emails.add(newResult[j][1])
+//                 accounts.push({email: newResult[j][1], points: newResult[j][2], name: newResult[j][3], hall: newResult[j][4]})
+//             }
+//             else {
+//                 for (const account of accounts) {
+//                     if (account['email'] === newResult[j][1]) {
+//                         account['points'] += newResult[j][2]
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     return accounts.sort( compare );
+// }
+
+export const sheetProcessing = (text) => {
+    //text = text.replaceAll('\n', ' ').split(' ')
+    const id_accounts = [];
+    text = text.split('\n')
+    console.log(text)
+    for (let i = 0; i < text.length; i++) {
+        let temp = text[i].split(' ')
+        if (temp.length === 4) {
+            id_accounts.push({id: temp[0], points: Number(temp[1]), hall: temp[2] + ' ' + temp[3]})
+        }
+        else if (temp.length === 5) { // Great Basin
+            id_accounts.push({id: temp[0], points: Number(temp[1]), hall: temp[2] + ' ' + temp[3] + ' ' + temp[4]})
         }
     }
-    return accounts.sort( compare );
-}
-
-const id_accounts = [];
-
-export const sheetProcessing = () => {
-    fetch('')
-    .then(response => response.text())
-    .then(text => console.log(text))
+    console.log(id_accounts)
+    return id_accounts.sort( compare );
 }
 
 export const sortByHall = (data, hall) => {
