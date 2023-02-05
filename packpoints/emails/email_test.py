@@ -37,7 +37,5 @@ Continue earning PackPoints by attending study hours with your academic mentors,
         
     print('Email Sent to: ', email_receiver)
 
-send_email('bpatchin@nevada.unr.edu', 123456789)
-
 # dlisqyetoxsqbeyw
 
