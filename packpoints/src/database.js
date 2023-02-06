@@ -69,7 +69,6 @@ export const sheetProcessing = (text) => {
     //text = text.replaceAll('\n', ' ').split(' ')
     const id_accounts = [];
     text = text.split('\n')
-    console.log(text)
     for (let i = 0; i < text.length; i++) {
         let temp = text[i].split(' ')
         if (temp.length === 4) {
@@ -79,7 +78,6 @@ export const sheetProcessing = (text) => {
             id_accounts.push({id: temp[0], points: Number(temp[1]), hall: temp[2] + ' ' + temp[3] + ' ' + temp[4]})
         }
     }
-    console.log(id_accounts)
     return id_accounts.sort( compare );
 }
 

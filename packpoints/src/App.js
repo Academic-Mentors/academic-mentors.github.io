@@ -69,7 +69,6 @@ const App = () => {
         setIsLoaded(true)
         setUsers(sheetProcessing(text))
         setAllUsers(sheetProcessing(text))
-        console.log(users)
       },
       (error) => {
         setIsLoaded(true);
