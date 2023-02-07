@@ -83,9 +83,12 @@ const App = () => {
   } else {
     return (
       <div className='App'>
+        <h1 className='header'>Welcome to Pack Points</h1>
+        <div className='select'>
+          <Select options={options} onChange={handleHallChange}/>
+        </div>
         <Leaderboard users={users}></Leaderboard>
-        <Select options={options} onChange={handleHallChange}/>
-        {(hall !== "") && <h1 className='hall-selector'>You have selected {hall.value}</h1>}
+        {/* {(hall !== "") && <h1 className='hall-selector'>You have selected {hall.value}</h1>} */}
       </div>
     );
   }
