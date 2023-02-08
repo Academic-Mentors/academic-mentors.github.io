@@ -11,7 +11,7 @@ import './Home.css'
 
 
 
-const Home = () => {
+export const Home = () => {
 
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -95,4 +95,3 @@ const Home = () => {
   
 }
 
-export default Home;
