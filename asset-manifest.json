@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/packpoints/static/css/main.df823379.css",
-    "main.js": "/packpoints/static/js/main.cb0e674f.js",
+    "main.css": "/packpoints/static/css/main.06861ab4.css",
+    "main.js": "/packpoints/static/js/main.42059baa.js",
     "static/js/787.8c94d411.chunk.js": "/packpoints/static/js/787.8c94d411.chunk.js",
     "static/media/peavine_4.jpg": "/packpoints/static/media/peavine_4.40dad5a38e7e25766502.jpg",
     "static/media/peavine_3.jpg": "/packpoints/static/media/peavine_3.3c7f7df6587dbcbe883a.jpg",
@@ -12,12 +12,12 @@
     "static/media/february_monthly.jpeg": "/packpoints/static/media/february_monthly.e4ddabf50296762bcb19.jpeg",
     "static/media/peavine_2.jpg": "/packpoints/static/media/peavine_2.115c17f5caa9317ed8fb.jpg",
     "index.html": "/packpoints/index.html",
-    "main.df823379.css.map": "/packpoints/static/css/main.df823379.css.map",
-    "main.cb0e674f.js.map": "/packpoints/static/js/main.cb0e674f.js.map",
+    "main.06861ab4.css.map": "/packpoints/static/css/main.06861ab4.css.map",
+    "main.42059baa.js.map": "/packpoints/static/js/main.42059baa.js.map",
     "787.8c94d411.chunk.js.map": "/packpoints/static/js/787.8c94d411.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df823379.css",
-    "static/js/main.cb0e674f.js"
+    "static/css/main.06861ab4.css",
+    "static/js/main.42059baa.js"
   ]
 }
