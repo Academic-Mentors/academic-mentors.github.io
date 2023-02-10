@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/packpoints/static/css/main.c8716f98.css",
-    "main.js": "/packpoints/static/js/main.f92885b6.js",
+    "main.css": "/packpoints/static/css/main.df823379.css",
+    "main.js": "/packpoints/static/js/main.cb0e674f.js",
     "static/js/787.8c94d411.chunk.js": "/packpoints/static/js/787.8c94d411.chunk.js",
+    "static/media/peavine_4.jpg": "/packpoints/static/media/peavine_4.40dad5a38e7e25766502.jpg",
     "static/media/peavine_3.jpg": "/packpoints/static/media/peavine_3.3c7f7df6587dbcbe883a.jpg",
     "static/media/pack_points.jpg": "/packpoints/static/media/pack_points.34c7db35e85c5a14c813.jpg",
     "static/media/pp_info.jpg": "/packpoints/static/media/pp_info.9685bc60802cebaf14e3.jpg",
@@ -10,14 +11,13 @@
     "static/media/pp_prizes.jpg": "/packpoints/static/media/pp_prizes.5d2f0e5aa492b4bc49c2.jpg",
     "static/media/february_monthly.jpeg": "/packpoints/static/media/february_monthly.e4ddabf50296762bcb19.jpeg",
     "static/media/peavine_2.jpg": "/packpoints/static/media/peavine_2.115c17f5caa9317ed8fb.jpg",
-    "static/media/peavine.jpg": "/packpoints/static/media/peavine.583c13eef9de69fe2e91.jpg",
     "index.html": "/packpoints/index.html",
-    "main.c8716f98.css.map": "/packpoints/static/css/main.c8716f98.css.map",
-    "main.f92885b6.js.map": "/packpoints/static/js/main.f92885b6.js.map",
+    "main.df823379.css.map": "/packpoints/static/css/main.df823379.css.map",
+    "main.cb0e674f.js.map": "/packpoints/static/js/main.cb0e674f.js.map",
     "787.8c94d411.chunk.js.map": "/packpoints/static/js/787.8c94d411.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8716f98.css",
-    "static/js/main.f92885b6.js"
+    "static/css/main.df823379.css",
+    "static/js/main.cb0e674f.js"
   ]
 }
