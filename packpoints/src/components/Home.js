@@ -4,6 +4,10 @@ import Select from 'react-select'
 
 import { Leaderboard } from './Leaderboard';
 
+import Peavine from '../assets/peavine.jpg'
+import Argenta from '../assets/peavine_2.jpg'
+import Canada from '../assets/peavine_3.jpg'
+
 import './Home.css'
 
 
@@ -20,13 +24,13 @@ export const Home = () => {
   const [hall, setHall] = useState("");
 
   const options = [
-    { value: 'Argenta Hall', label: 'Argenta' },
-    { value: 'Canada Hall', label: 'Canada' },
+    { value: 'Argenta Hall', label: 'Argenta', src: Argenta },
+    { value: 'Canada Hall', label: 'Canada', src: Canada },
     { value: 'Great Basin Hall', label: 'Great Basin' },
     { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper' },
     { value: 'Nevada LLC', label: 'Nevada LLC' },
     { value: 'Nye Hall', label: 'Nye' },
-    { value: 'Peavine Hall', label: 'Peavine' },
+    { value: 'Peavine Hall', label: 'Peavine', src: Peavine },
     { value: 'Sierra Hall', label: 'Sierra' },
     { value: 'All Halls', label: 'All Halls' }
   ]
@@ -36,31 +40,6 @@ export const Home = () => {
     console.log(`Option selected:`, selectedOption);
     setUsers(sortByHall(allUsers, selectedOption));
   }
-  
-  // useEffect(() => {
-  //   var requestOptions = {
-  //     method: 'GET',
-  //     redirect: 'follow'
-  //   };  
-  //   fetch(url, requestOptions)
-  //     .then(res => res.json())
-  //     .then(
-  //       (result) => {
-  //         setIsLoaded(true);
-  //         setUsers(dataProcessing(result));
-  //         setAllUsers(dataProcessing(result));
-  //         setUsers(sheetProcessing());
-  //         setAllUsers(sheetProcessing)
-  //       },
-  //       // Note: it's important to handle errors here
-  //       // instead of a catch() block so that we don't swallow
-  //       // exceptions from actual bugs in components.
-  //       (error) => {
-  //         setIsLoaded(true);
-  //         setError(error);
-  //       }
-  //     )
-  // }, [])
 
   useEffect(() => {
     fetch('https://cdn.jsdelivr.net/gh/unrhc/packpoints/packpoints/id_data.txt')
@@ -83,12 +62,17 @@ export const Home = () => {
   } else {
     return (
       <div className='Home'>
-        <h1 className='header'>Welcome to Pack Points</h1>
-        <div className='select'>
-          <Select options={options} onChange={handleHallChange}/>
-        </div>
-        <Leaderboard users={users}></Leaderboard>
-        {/* {(hall !== "") && <h1 className='hall-selector'>You have selected {hall.value}</h1>} */}
+        <img
+          className="demo-bg"
+          src={hall.src}
+          alt="peavine background"
+        />
+          <h1 className='header'>Welcome to Pack Points</h1>
+          <div className='select'>
+            <Select options={options} onChange={handleHallChange}/>
+          </div>
+          <Leaderboard users={users}></Leaderboard>
+          {/* {(hall !== "") && <h1 className='hall-selector'>You have selected {hall.value}</h1>} */}
       </div>
     );
   }

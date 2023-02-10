@@ -2,10 +2,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 2rem 0rem;
+    /* margin: 2rem 0rem; */
     color: white;
     font-family: monospace;
     font-size: x-large;
+    margin-top: 2rem;
 }
     
 table {
