@@ -4,7 +4,7 @@ import Select from 'react-select'
 
 import { Leaderboard } from './Leaderboard';
 
-import Peavine from '../assets/peavine.jpg'
+import Peavine from '../assets/peavine_4.jpg'
 import Argenta from '../assets/peavine_2.jpg'
 import Canada from '../assets/peavine_3.jpg'
 
