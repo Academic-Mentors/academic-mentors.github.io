@@ -10,11 +10,6 @@ import Canada from '../assets/peavine_3.jpg'
 
 import './Home.css'
 
-
-// const url = 'https://script.google.com/macros/s/AKfycbx3EYsAmGUp3nql4gkRvcuGOTSaVL1ZO3UuNvTioxskYtY3UCcOML-_v_0mfLVJSlQ8/exec';
-
-
-
 export const Home = () => {
 
   const [error, setError] = useState(null);
