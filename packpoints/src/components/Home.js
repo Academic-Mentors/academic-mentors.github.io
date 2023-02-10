@@ -7,6 +7,7 @@ import { Leaderboard } from './Leaderboard';
 import Peavine from '../assets/peavine_4.jpg'
 import Argenta from '../assets/peavine_2.jpg'
 import Canada from '../assets/peavine_3.jpg'
+import Original from '../assets/unr_original_2.jpg'
 
 import './Home.css'
 
@@ -27,7 +28,7 @@ export const Home = () => {
     { value: 'Nye Hall', label: 'Nye' },
     { value: 'Peavine Hall', label: 'Peavine', src: Peavine },
     { value: 'Sierra Hall', label: 'Sierra' },
-    { value: 'All Halls', label: 'All Halls' }
+    { value: 'All Halls', label: 'All Halls', src: Original }
   ]
 
   const handleHallChange = (selectedOption) => {
@@ -59,7 +60,7 @@ export const Home = () => {
       <div className='Home'>
         <img
           className="demo-bg"
-          src={hall.src}
+          src={hall.src ?? Original}
           alt="peavine background"
         />
           <h1 className='header'>Welcome to Pack Points</h1>
