@@ -73,8 +73,8 @@ const Event = (event) => {
     }
 
     return (
-        <div ref={ref}>
-          <span onMouseOver={openTooltip} onMouseOut={closeTooltip}>{event.title}</span>
+        <div onMouseOver={openTooltip} onMouseOut={closeTooltip} ref={ref}>
+          <span>{event.title}</span>
           <Overlay
             rootClose
             target={getTarget}
