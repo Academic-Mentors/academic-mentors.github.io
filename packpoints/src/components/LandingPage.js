@@ -1,6 +1,13 @@
 import React from 'react'
 
 import main_image from '../assets/main_image.png'
+import main_image_2 from '../assets/main_image_2'
+import wolf from '../assets/wolf.png'
+import calendar from '../assets/calendar_emoji.png'
+import trophy from '../assets/trophy.png'
+import onehundred from '../assets/onehundred.png'
+import questionmark from '../assets/questionmark.png'
+import doublebang from '../assets/doublebang.png'
 
 import './LandingPage.css'
 
@@ -103,12 +110,114 @@ export const LandingPage = () => {
             </div>
           </div>
         </div>
+
+
+
         <div className='landing_page_emojis'>
-
+          <div className='emojis_left'>
+            <div className='emojis_left_image'>
+              <img src={wolf} alt='emoji of wolf' className='wolf'/>
+            </div>
+            <div className='emojis_left_text'>
+              <div className='emojis_left_text_top'>
+                Sense of Community!
+              </div>
+              <div className='emojis_left_text_bottom'>
+                Partake in residential communties, make friends, and earn points!
+              </div>
+            </div>
+          </div>
+          <div className='emojis_middle'>
+            <div className='emojis_middle_image'>
+                <img src={calendar} alt='emoji of calendar' className='calendar'/>
+              </div>
+              <div className='emojis_middle_text'>
+                <div className='emojis_middle_text_top'>
+                  Upcoming Events!
+                </div>
+                <div className='emojis_middle_text_bottom'>
+                  Head to the live calendar where you can see upcoming events
+                </div>
+            </div>
+          </div>
+          <div className='emojis_right'>
+            <div className='right_emojis_trophy'>
+              <div className='emojis_right_image'>
+                <img src={trophy} alt='emoji of trophy' className='trophy'/>
+              </div>
+            </div>
+            <div className='emojis_right_text'>
+              <div className='emojis_right_text_top'>
+                Earn Prizes!
+              </div>
+              <div className='emojis_right_text_bottom'>
+                Checkout the leaderboard to see how close you are to the top!
+              </div>
+            </div>
+          </div>
         </div>
+
+
         <div className='landing_page_aboutus'>
-
+          <div className='aboutus_header'>
+            <div className='header_info'>
+              <div className='header_text'>
+              About Us! 😊 
+              </div>
+            </div>
+          </div>
+          <div className='aboutus_image'>
+            <div className='aboutus_dots'>
+              <div className='audot1'></div>
+              <div className='audot2'></div>
+              <div className='audot3'></div>
+              <div className='audot4'></div>
+              <div className='audot5'></div>
+              <div className='audot6'></div>
+              <div className='audot7'></div>
+              <div className='audot8'></div>
+            </div>
+            <img src={main_image_2} alt='person looking at robot' className='main_image_2'/>
+          </div>
+          <div className='aboutus_explanation'>
+            <div className='explanation_top'>
+              <img src={questionmark} alt='question mark emoji' className='questionmark'/>
+              <div className='explanation_top_text'>
+                <div className='explanation_top_top'>
+                  Why We Started
+                </div>
+                <div className='explanation_top_bottom'>
+                  To give back to our community. It's as simple as that. At Residential Life, we believe that those who support each other should be rewarded for their contributions. Whether you support a Resident Assistant's event or an Academic Mentor's study hours, you are taking the time to build a strong residential community with those around you.
+                </div>
+              </div>
+            </div>
+            <div className='explanation_middle'>
+              <img src={doublebang} alt='doublebang emoji' className='doublebang'/>
+              <div className='explanation_middle_text'>
+                <div className='explanation_middle_top'>
+                  Our Goals
+                </div>
+                <div className='explanation_middle_bottom'>
+                  Our main goal is to have as many students as possible, that live on campus, participate in Pack Points. With an increase in participants we would be able to give back even more to the community!
+                </div>
+              </div>
+            </div>
+            <div className='explanation_bottom'>
+              <img src={onehundred} alt='onehundred emoji' className='onehundred'/>
+              <div className='explanation_bottom_text'>
+                <div className='explanation_bottom_top'>
+                  The Team
+                </div>
+                <div className='explanation_bottom_bottom'>
+                  This project was visualized by the Academic Mentors. Specifically the two AMs working for Hall Currency who built the entire program and this website from scratch. Resident Assistant's also have made this possible by holding events as well as providing the QR codes to gain points. Last but not least, Residential Life has also played a role in giving us this great opportunity to build this program.
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
+
+        
         <div className='landing_page_footer'>
 
         </div>

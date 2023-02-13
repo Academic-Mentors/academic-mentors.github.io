@@ -10,18 +10,16 @@
 
 .background_bubbles {
     position: absolute;
-    width: 1920px;
-    height: 1984px;
-    /* left: -99px;
-    top: -45px;     */
+    width: 100%;
+    height: 100%;
 }
 
 .background_bubbles_first {
-    position: absolute;
+    /* position: absolute;
     width: 1799px;
     height: 1160px;
     left: 79px;
-    top: 1939px;
+    top: 1939px; */
     
     opacity: 0.2;
     transform: matrix(1, 0, 0, -1, 0, 0);
@@ -176,7 +174,7 @@
 
 .landing_page_welcome {
     width: 1205.76px;
-    height: 669px;
+    height: 27%;
     
     flex: none;
     order: 1;
@@ -184,7 +182,22 @@
 }
 
 .landing_page_emojis {
-
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 10px;
+    
+    width: 1233px;
+    height: 163px;
+    
+    background: #5380EA;
+    box-shadow: 0px 34px 50px -20px rgba(26, 163, 122, 0.15);
+    border-radius: 10px;
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;    
 }
 
 .landing_page_aboutus {
@@ -197,7 +210,7 @@
 
 /* START OF HEADER */
 .landing_page_header_left {
-    width: 137px;
+    /* width: 137px; */
     height: 29px;
     
     flex: none;
@@ -230,7 +243,7 @@
     
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 48px;
     line-height: 29px;
     
     color: #5380EA;    
@@ -340,14 +353,14 @@
     flex-grow: 0;    
 }
 
-/* START OF LANDING PAGE WELCOME */
+/* START OF LANDING PAGE WELCOME
 .landing_page_welcome_dots {
-    /* position: absolute;
+    position: absolute;
     width: 576.16px;
     height: 669px;
     left: 980.96px;
-    top: 166px;     */
-}
+    top: 166px;    
+} */
 
 .dot1 {
     position: absolute;
@@ -766,3 +779,278 @@
     /* border: 1px solid #000000; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
 }
+
+.emojis_left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    align-items: center;
+    
+    /* width: 388.33px; */
+    width: auto;
+    height: 115px;
+    
+    border-radius: 10px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.emojis_left_image {
+    width: 64px;
+    height: 64px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;    
+}
+
+.wolf {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    /* left: 0px;
+    top: 0px;     */
+}
+
+.emojis_left_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 252.33px;
+    /* height: 67px; */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;    
+}
+
+.emojis_left_text_top {
+    width: 252.33px;
+    /* height: 19px; */
+    padding-bottom: 0.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+.emojis_left_text_bottom {
+    width: 252.33px;
+    /* height: 38px; */
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+.emojis_middle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    align-items: center;
+    
+    /* width: 388.33px; */
+    width: auto;
+    height: 115px;
+    
+    border-radius: 10px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;    
+}
+
+.emojis_middle_image {
+    width: 60.08px;
+    height: 60.08px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;    
+}
+
+.calendar {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    /* left: 24px;
+    top: 24px;     */
+}
+
+.emojis_middle_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 256.26px;
+    /* height: 67px; */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;    
+}
+
+.emojis_middle_text_top {
+    width: 256.26px;
+    /* height: 19px; */
+    padding-bottom: 0.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+.emojis_middle_text_bottom {
+    width: 256.26px;
+    /* height: 38px; */
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+.emojis_right {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    align-items: center;
+    
+    /* width: 388.33px; */
+    width: auto;
+    height: 115px;
+    
+    filter: drop-shadow(0px 24px 24px rgba(0, 0, 0, 0.08));
+    backdrop-filter: blur(2px);
+    
+    border-radius: 10px;
+    
+    flex: none;
+    order: 2;
+    flex-grow: 1;    
+}
+
+.right_emojis_trophy {
+    width: 64px;
+    height: 64px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;    
+}
+
+.emojis_right_trophy {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    /* left: 24px;
+    top: 24px; */
+}
+
+.trophy {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    /* left: 24px;
+    top: 24px;     */
+}
+
+.emojis_right_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 252.33px;
+    /* height: 67px; */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;    
+}
+
+.emojis_right_text_top {
+    width: 252.33px;
+    /* height: 19px; */
+    padding-bottom: 0.5rem;
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+.emojis_right_text_bottom {
+    width: 252.33px;
+    /* height: 38px; */
+    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;    
+}
+
+
