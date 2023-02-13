@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/packpoints/static/css/main.06861ab4.css",
-    "main.js": "/packpoints/static/js/main.77b21bcf.js",
+    "main.css": "/packpoints/static/css/main.3798c0bc.css",
+    "main.js": "/packpoints/static/js/main.92ec7400.js",
     "static/js/787.8c94d411.chunk.js": "/packpoints/static/js/787.8c94d411.chunk.js",
     "static/media/peavine_4.jpg": "/packpoints/static/media/peavine_4.40dad5a38e7e25766502.jpg",
     "static/media/peavine_3.jpg": "/packpoints/static/media/peavine_3.3c7f7df6587dbcbe883a.jpg",
     "static/media/unr_original_2.jpg": "/packpoints/static/media/unr_original_2.91c69d2d22dfd932cc48.jpg",
+    "static/media/main_image.png": "/packpoints/static/media/main_image.c826b2d01aa4d9e45dcc.png",
     "static/media/pack_points.jpg": "/packpoints/static/media/pack_points.34c7db35e85c5a14c813.jpg",
     "static/media/pp_info.jpg": "/packpoints/static/media/pp_info.9685bc60802cebaf14e3.jpg",
     "static/media/pp_tiers.jpg": "/packpoints/static/media/pp_tiers.344d0bc9313f3b874a39.jpg",
     "static/media/pp_prizes.jpg": "/packpoints/static/media/pp_prizes.5d2f0e5aa492b4bc49c2.jpg",
     "static/media/february_monthly.jpeg": "/packpoints/static/media/february_monthly.e4ddabf50296762bcb19.jpeg",
+    "static/media/main_image_2.png": "/packpoints/static/media/main_image_2.9c87da7111f70f95b4a3.png",
     "static/media/peavine_2.jpg": "/packpoints/static/media/peavine_2.115c17f5caa9317ed8fb.jpg",
+    "static/media/trophy.png": "/packpoints/static/media/trophy.93b1443e20a85f5d8aa9.png",
+    "static/media/wolf.png": "/packpoints/static/media/wolf.a98b9d1752da4b7c2d6f.png",
+    "static/media/calendar_emoji.png": "/packpoints/static/media/calendar_emoji.67b8d21ca6b17979320e.png",
+    "static/media/onehundred.png": "/packpoints/static/media/onehundred.d5247361eba36c983c5a.png",
     "index.html": "/packpoints/index.html",
-    "main.06861ab4.css.map": "/packpoints/static/css/main.06861ab4.css.map",
-    "main.77b21bcf.js.map": "/packpoints/static/js/main.77b21bcf.js.map",
+    "main.3798c0bc.css.map": "/packpoints/static/css/main.3798c0bc.css.map",
+    "main.92ec7400.js.map": "/packpoints/static/js/main.92ec7400.js.map",
     "787.8c94d411.chunk.js.map": "/packpoints/static/js/787.8c94d411.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06861ab4.css",
-    "static/js/main.77b21bcf.js"
+    "static/css/main.3798c0bc.css",
+    "static/js/main.92ec7400.js"
   ]
 }
