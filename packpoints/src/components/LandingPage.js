@@ -1,7 +1,7 @@
 import React from 'react'
 
 import main_image from '../assets/main_image.png'
-import main_image_2 from '../assets/main_image_2'
+import main_image_2 from '../assets/main_image_2.png'
 import wolf from '../assets/wolf.png'
 import calendar from '../assets/calendar_emoji.png'
 import trophy from '../assets/trophy.png'
@@ -165,19 +165,19 @@ export const LandingPage = () => {
               About Us! 😊 
               </div>
             </div>
-          </div>
-          <div className='aboutus_image'>
-            <div className='aboutus_dots'>
-              <div className='audot1'></div>
-              <div className='audot2'></div>
-              <div className='audot3'></div>
-              <div className='audot4'></div>
-              <div className='audot5'></div>
-              <div className='audot6'></div>
-              <div className='audot7'></div>
-              <div className='audot8'></div>
+            <div className='aboutus_image'>
+              <div className='aboutus_dots'>
+                <div className='audot1'></div>
+                <div className='audot2'></div>
+                <div className='audot3'></div>
+                <div className='audot4'></div>
+                <div className='audot5'></div>
+                <div className='audot6'></div>
+                <div className='audot7'></div>
+                <div className='audot8'></div>
+              </div>
+              <img src={main_image_2} alt='person looking at robot' className='main_image_2'/>
             </div>
-            <img src={main_image_2} alt='person looking at robot' className='main_image_2'/>
           </div>
           <div className='aboutus_explanation'>
             <div className='explanation_top'>
