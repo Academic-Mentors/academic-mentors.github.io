@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { useNavigate } from 'react-router-dom'
+
 import main_image from '../assets/main_image.png'
 import main_image_2 from '../assets/main_image_2.png'
 import wolf from '../assets/wolf.png'
@@ -12,6 +14,9 @@ import doublebang from '../assets/doublebang.png'
 import './LandingPage.css'
 
 export const LandingPage = () => {
+
+  const navigate = useNavigate();
+
   return (
     <>
       {/* <div className='background'></div> */}
@@ -51,11 +56,19 @@ export const LandingPage = () => {
           </div>
           <div className='landing_page_header_right'>
             <div className='landing_page_header_right_three'>
-              <div className='landing_page_header_right_three_left'>About Us</div>
-              <div className='landing_page_header_right_three_middle'>Calendar</div>
-              <div className='landing_page_header_right_three_right'>Image Gallery</div>
+              <div className='landing_page_header_right_three_left' onClick={() => {
+                window.location.href = 'https://www.unr.edu/housing'
+              }}>About Us</div>
+              <div className='landing_page_header_right_three_middle' onClick={() => {
+                navigate('calendar')
+              }}>Calendar</div>
+              <div className='landing_page_header_right_three_right' onClick={() => {
+                navigate('info')
+              }}>Image Gallery</div>
             </div>
-            <div className='landing_page_header_right_button'>
+            <div className='landing_page_header_right_button' onClick={() => {
+              navigate('leaderboard'); 
+            }}>
               <div className='landing_page_header_right_button_text'>Leaderboard</div>
             </div>
           </div>
@@ -122,7 +135,9 @@ export const LandingPage = () => {
         <div className='landing_page_emojis'>
           <div className='emojis_left'>
             <div className='emojis_left_image'>
-              <img src={wolf} alt='emoji of wolf' className='wolf'/>
+              <img src={wolf} alt='emoji of wolf' className='wolf' onClick={() => {
+                window.location.href = 'https://unr.campuslabs.com/engage/'
+              }}/>
             </div>
             <div className='emojis_left_text'>
               <div className='emojis_left_text_top'>
@@ -135,7 +150,9 @@ export const LandingPage = () => {
           </div>
           <div className='emojis_middle'>
             <div className='emojis_middle_image'>
-                <img src={calendar} alt='emoji of calendar' className='calendar'/>
+                <img src={calendar} alt='emoji of calendar' className='calendar' onClick={() => {
+                  navigate('calendar')
+                }}/>
               </div>
               <div className='emojis_middle_text'>
                 <div className='emojis_middle_text_top'>
@@ -149,7 +166,9 @@ export const LandingPage = () => {
           <div className='emojis_right'>
             <div className='right_emojis_trophy'>
               <div className='emojis_right_image'>
-                <img src={trophy} alt='emoji of trophy' className='trophy'/>
+                <img src={trophy} alt='emoji of trophy' className='trophy' onClick={() => {
+                  navigate('leaderboard')
+                }}/>
               </div>
             </div>
             <div className='emojis_right_text'>

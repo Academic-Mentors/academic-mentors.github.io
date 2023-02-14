@@ -328,6 +328,13 @@
     flex-grow: 0;
 }
 
+.landing_page_header_right_button:hover {
+	background: rgba(0,0,0,0);
+	color: #5380EA;
+	box-shadow: inset 0 0 0 3px #5380EA;
+    cursor: pointer;
+}
+
 .landing_page_header_right_three_left {
     width: 71px;
     height: 19px;
@@ -342,6 +349,11 @@
     flex: none;
     order: 0;
     flex-grow: 0;    
+}
+
+.landing_page_header_right_three_left:hover {
+    color: #5380EA;
+    cursor: pointer;
 }
 
 .landing_page_header_right_three_middle {
@@ -360,6 +372,11 @@
     flex-grow: 0;    
 }
 
+.landing_page_header_right_three_middle:hover {
+    color: #5380EA;
+    cursor: pointer;
+}
+
 .landing_page_header_right_three_right {
     width: 104px;
     height: 19px;
@@ -374,6 +391,11 @@
     flex: none;
     order: 2;
     flex-grow: 0;    
+}
+
+.landing_page_header_right_three_right:hover {
+    color: #5380EA;
+    cursor: pointer;
 }
 
 .landing_page_header_right_button_text {
@@ -842,12 +864,18 @@
 }
 
 .wolf {
-    position: absolute;
+    /* position: absolute; */
     width: 64px;
     height: 64px;
     padding: 0;
+    transition: transform .4s ease-in-out;
     /* left: 0px;
     top: 0px;     */
+}
+
+.wolf:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
 }
 
 .emojis_left_text {
@@ -935,8 +963,14 @@
     width: 64px;
     height: 64px;
     padding: 0;
+    transition: transform .4s ease-in-out;
     /* left: 24px;
     top: 24px;     */
+}
+
+.calendar:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
 }
 
 .emojis_middle_text {
@@ -1032,8 +1066,14 @@
     width: 64px;
     height: 64px;
     padding: 0;
+    transition: transform .4s ease-in-out;
     /* left: 24px;
     top: 24px;     */
+}
+
+.trophy:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
 }
 
 .emojis_right_text {
