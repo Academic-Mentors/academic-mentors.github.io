@@ -14,26 +14,37 @@ import './LandingPage.css'
 export const LandingPage = () => {
   return (
     <>
-      <div className='background'></div>
-      <div className='background_bubbles'>
-        <div className='background_bubbles_first'>
+      {/* <div className='background'></div> */}
+      {/* <div className='background_bubbles'> */}
+        {/* <div className='background_bubbles_first'> */}
           <div className='background_bubbles_first_one'></div>
           <div className='background_bubbles_first_two'></div>
           <div className='background_bubbles_first_three'></div>
           <div className='background_bubbles_first_four'></div>
           <div className='background_bubbles_first_five'></div>
-        </div>
-        <div className='background_bubbles_second'>
+        {/* </div> */}
+        {/* <div className='background_bubbles_second'> */}
           <div className='background_bubbles_second_one'></div>
           <div className='background_bubbles_second_two'></div>
           <div className='background_bubbles_second_three'></div>
           <div className='background_bubbles_second_four'></div>
           <div className='background_bubbles_second_five'></div>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
+
+
+
       <div className='landing_page'>
-
-
+        {/* <div className='background_bubbles_second_one'></div>
+        <div className='background_bubbles_second_two'></div>
+        <div className='background_bubbles_second_three'></div>
+        <div className='background_bubbles_second_four'></div>
+        <div className='background_bubbles_second_five'></div>
+        <div className='background_bubbles_first_one'></div>
+        <div className='background_bubbles_first_two'></div>
+        <div className='background_bubbles_first_three'></div>
+        <div className='background_bubbles_first_four'></div>
+        <div className='background_bubbles_first_five'></div> */}
         <div className='landing_page_header'>
           <div className='landing_page_header_left'>
             <div className='landing_page_header_left_text'>Pack Points</div>
@@ -49,9 +60,8 @@ export const LandingPage = () => {
             </div>
           </div>
         </div>
-
         <div className='landing_page_welcome'>
-          <div className='landing_page_welcome_dots'>
+          {/* <div className='landing_page_welcome_dots'> */}
             <div className='dot1'></div>
             <div className='dot2'></div>
             <div className='dot3'></div>
@@ -60,14 +70,10 @@ export const LandingPage = () => {
             <div className='dot6'></div>
             <div className='dot7'></div>
             <div className='dot8'></div>
-          </div>
+          {/* </div> */}
           <div className='landing_page_welcome_primary'>
             <div className='landing_page_welcome_primary_actual'>
-              <div className='split1'>
-                <div className='split1_di'>
-                  <div className='split1_header'>Welcome to the Pack Points Website!👋</div>
-                </div>
-              </div>
+              <div className='split1_header'>Welcome to the Pack Points Website!👋</div>
               <div className='split2'>
                 <div className='top'>
                   <div className='top_circle'></div>
@@ -213,13 +219,27 @@ export const LandingPage = () => {
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
 
         
         <div className='landing_page_footer'>
-
+          <div className='footer_line'></div>
+          <div className='footer_content'>
+            <div className='footer_content_left'>
+              <div className='content_left'>Pack Points</div>
+            </div>
+            <div className='footer_content_right'>
+              <div className='content_right_three'>
+                <div className='content_right_au'>About Us</div>
+                <div className='content_right_cal'>Calendar</div>
+                <div className='content_right_ig'>Image Gallery</div>
+              </div>
+              <div className='content_right_button'>
+                <div className='right_button_con'>Leaderboard</div>
+              </div>
+            </div>
+          </div>
         </div>
         
       </div>
