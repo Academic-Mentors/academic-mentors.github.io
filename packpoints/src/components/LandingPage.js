@@ -73,52 +73,52 @@ export const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className='landing_page_welcome'>
-          <div className='landing_page_welcome_primary'>
-            <div className='landing_page_welcome_primary_actual'>
-              <div className='split1_header'>Welcome to the Pack Points Website!👋</div>
-              <div className='split2'>
-                <div className='top'>
-                  <div className='top_circle'></div>
-                  <div className='top_text'>
-                    <div className='top_top'>Blue Tier -- 100 Points</div>
-                    <div className='top_bottom'>
-                      Attend Academic Mentor Study Hours<br/>
-                      Attend Leadership Council Meetings
-                    </div>
-                  </div>
-                </div>
-                <div className='middle'>
-                  <div className='middle_circle'></div>
-                  <div className='middle_text'>
-                    <div className='middle_top'>Silver Tier -- 80 Points</div>
-                    <div className='middle_bottom'>
-                      Attend Academic Mentor Events<br/>
-                      Attend specific RHA events<br/>
-                      Attend specific Residence Hall Events
-                    </div>
-                  </div>
-                </div>
-                <div className='bottom'>
-                  <div className='bottom_circle'></div>
-                  <div className='bottom_text'>
-                    <div className='bottom_top'>White Tier -- 50 Points</div>
-                    <div className='bottom_bottom'>
-                      Scan QR Codes on Bulletin Boards<br/>
-                      Participate in Residential Life tabling events<br/>
-                      Participate in Join The Pack Events led by RAs
-                    </div>
+
+
+        <div className='landing_page_welcome_primary'>
+          <div className='welcome_left'>
+              <div className='split1_header'>
+                Welcome to the Pack Points Website!👋
+              </div>
+              <div className='top'>
+                <div className='top_circle'></div>
+                <div className='top_text'>
+                  <div className='top_top'>Blue Tier -- 100 Points</div>
+                  <div className='top_bottom'>
+                    Attend Academic Mentor Study Hours<br/>
+                    Attend Leadership Council Meetings
                   </div>
                 </div>
               </div>
-              <img 
-                src={main_image} 
-                alt='person holding pack points' 
-                className='main_image'
-              />
+              <div className='middle'>
+                <div className='middle_circle'></div>
+                <div className='middle_text'>
+                  <div className='middle_top'>Silver Tier -- 80 Points</div>
+                  <div className='middle_bottom'>
+                    Attend Academic Mentor Events<br/>
+                    Attend specific RHA events<br/>
+                    Attend specific Residence Hall Events
+                  </div>
+                </div>
+              </div>
+              <div className='bottom'>
+                <div className='bottom_circle'></div>
+                <div className='bottom_text'>
+                  <div className='bottom_top'>White Tier -- 50 Points</div>
+                  <div className='bottom_bottom'>
+                    Scan QR Codes on Bulletin Boards<br/>
+                    Participate in Residential Life tabling events<br/>
+                    Participate in Join The Pack Events led by RAs
+                  </div>
+                </div>
+              </div>
             </div>
+            <img 
+              src={main_image} 
+              alt='person holding pack points' 
+              className='main_image'
+            />
           </div>
-        </div>
 
 
 

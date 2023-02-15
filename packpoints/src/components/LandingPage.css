@@ -212,6 +212,7 @@
     flex-grow: 0;    
 }
 
+
 .landing_page_aboutus {
     display: flex;
     flex-direction: row;
@@ -410,26 +411,26 @@
 
 
 
-.landing_page_welcome_primary {
-    /* position: absolute; */
-    width: 1205.76px;
-    height: 649px;
-    left: 357.12px;
-    top: 200px;    
-}
 
-.landing_page_welcome_primary_actual {
+
+.landing_page_welcome_primary {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 0px;
-    gap: 64px;
+    max-width: 85rem;
     
     /* position: absolute;
     width: 582px;
     height: 595px;
     left: 357.12px;
     top: 166px;     */
+}
+
+.welcome_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 .split1 {
@@ -457,16 +458,18 @@
 }
 
 .split1_header {
-    position: absolute;
+    /* position: absolute;
     width: 582px;
     height: 116px;
     left: 0px;
-    top: 0px;
+    top: 0px; */
     
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
+    max-width: 75%;
+    margin-bottom: 4rem;
     
     color: #FFFFFF;
     text-shadow: 0 0 7px #5380EA;
@@ -476,10 +479,10 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
-    gap: 24px;
+    padding: 1.75rem;
+    gap: 4%;
     
-    width: 577px;
+    width: 70%;
     height: auto;
     
     background: #3F3F3F;
@@ -487,6 +490,7 @@
     backdrop-filter: blur(2px);
     
     border-radius: 10px;
+    margin-bottom: 2rem;
     
     flex: none;
     order: 0;
@@ -494,8 +498,8 @@
 }
 
 .top_circle {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     
     background: #5380EA;
     border-radius: 50%;
@@ -512,8 +516,7 @@
     padding: 0px;
     gap: 10px;
     
-    width: 441px;
-    height: 67px;
+    width: 75%;
     
     flex: none;
     order: 1;
@@ -521,13 +524,11 @@
 }
 
 .top_top {
-    width: 441px;
-    height: 19px;
+    width: 100%;
     
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #FFFFFF;
     
@@ -538,13 +539,11 @@
 }
 
 .top_bottom {
-    width: 441px;
-    height: 38px;
+    width: 100%;
     
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #ACACAC;
     
@@ -558,10 +557,12 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
-    gap: 24px;
+    padding: 1.75rem;
+    gap: 4%;
     
-    width: 577px;
+    margin-bottom: 2rem;
+
+    width: 70%;
     height: auto;
     
     background: #3F3F3F;
@@ -576,8 +577,8 @@
 }
 
 .middle_circle {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     
     background: #ACACAC;
     border-radius: 50%;
@@ -593,8 +594,7 @@
     padding: 0px;
     gap: 10px;
     
-    width: 441px;
-    height: 86px;
+    width: 75%;
     
     flex: none;
     order: 1;
@@ -602,13 +602,11 @@
 }
 
 .middle_top {
-    width: 441px;
-    height: 19px;
+    width: 100%;
     
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #FFFFFF;
     
@@ -619,13 +617,11 @@
 }
 
 .middle_bottom {
-    width: 441px;
-    height: 57px;
+    width: 100%;
     
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #ACACAC;
     
@@ -639,10 +635,10 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
-    gap: 24px;
+    padding: 1.75rem;
+    gap: 4%;
     
-    width: 577px;
+    width: 70%;
     height: auto;
     
     background: #3F3F3F;
@@ -657,8 +653,8 @@
 }
 
 .bottom_circle {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     
     background: #FFFFFF;
     border-radius: 50%;
@@ -675,8 +671,7 @@
     padding: 0px;
     gap: 10px;
     
-    width: 441px;
-    height: 86px;
+    width: 75%;
     
     flex: none;
     order: 1;
@@ -684,13 +679,11 @@
 }
 
 .bottom_top {
-    width: 441px;
-    height: 19px;
+    width: 100%;
     
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #FFFFFF;
     
@@ -701,13 +694,11 @@
 }
 
 .bottom_bottom {
-    width: 441px;
-    height: 57px;
+    width: 100%;
     
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     
     color: #ACACAC;
     
@@ -717,36 +708,11 @@
     flex-grow: 0;    
 }
 
-.split2 {
-
-    position: absolute;
-    /* width: 582px;
-    height: 116px; */
-    left: 0px;
-    top: 150px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
-    
-    /* width: 577px;
-    height: 415px; */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;    
-}
-
 .main_image {
     box-sizing: border-box;
-
-    position: absolute;
-    width: 54%;
-    /* height: 632px; */
-    left: 56%;
     padding: 0;
+    max-height: 42rem;
+    max-width: 42rem;
     display: flex;
     order: 0;
     /* border: 1px solid #000000; */
@@ -1613,13 +1579,47 @@ opacity: 1;
         overflow-x: hidden;
     }
 
-    .landing_page_header {
-        flex-direction: column;
+    .landing_page {
         gap: 3rem;
     }
 
+    .landing_page_header {
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .landing_page_welcome_primary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .welcome_left {
+        align-items: center;
+    }
+
+    .split1_header {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .top {
+        margin-bottom: 2rem;
+    }
+
+    .middle {
+        margin-bottom: 2rem;
+    }
+    
+    .bottom {
+        margin-bottom: 4rem;
+    }
+
     .main_image {
-        display: none;
+        /* display: none; */
     }
 
     .landing_page_emojis {
@@ -1642,4 +1642,19 @@ opacity: 1;
 html, body {
     width: 100%;
     min-height: 100%;
+}
+
+@media (max-width: 720px) {
+    .landing_page_header_right_three {
+        margin-bottom: 2rem;
+    }
+
+    .landing_page_header_right {
+        flex-direction: column;
+    }
+
+    .landing_page_header_right_button {
+        justify-content: center;
+        align-items: center;
+    }
 }
