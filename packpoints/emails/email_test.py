@@ -6,7 +6,7 @@ def send_email(email_receiver, id):
     email_sender = 'packpoints@gmail.com'
     email_password = 'dlisqyetoxsqbeyw'
 
-    # email_receiver = 'clipon@unr.edu'
+    email_receiver = 'ramin@nevada.unr.edu'
 
     subject = f"Pack Points ID for {email_receiver}"
     body = f"""
@@ -36,6 +36,8 @@ Continue earning PackPoints by attending study hours with your academic mentors,
         smtp.sendmail(email_sender, email_receiver, em.as_string())
         
     print('Email Sent to: ', email_receiver)
+
+send_email('', "YO ROOHAN WHAT IS UP HOMIE DOG")
 
 # dlisqyetoxsqbeyw
 

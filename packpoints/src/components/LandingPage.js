@@ -57,8 +57,8 @@ export const LandingPage = () => {
           <div className='landing_page_header_right'>
             <div className='landing_page_header_right_three'>
               <div className='landing_page_header_right_three_left' onClick={() => {
-                window.location.href = 'https://www.unr.edu/housing'
-              }}>About Us</div>
+                window.location.href = 'https://unr.campuslabs.com/engage/'
+              }}>Pack Life</div>
               <div className='landing_page_header_right_three_middle' onClick={() => {
                 navigate('calendar')
               }}>Calendar</div>
@@ -74,16 +74,6 @@ export const LandingPage = () => {
           </div>
         </div>
         <div className='landing_page_welcome'>
-          {/* <div className='landing_page_welcome_dots'> */}
-            <div className='dot1'></div>
-            <div className='dot2'></div>
-            <div className='dot3'></div>
-            <div className='dot4'></div>
-            <div className='dot5'></div>
-            <div className='dot6'></div>
-            <div className='dot7'></div>
-            <div className='dot8'></div>
-          {/* </div> */}
           <div className='landing_page_welcome_primary'>
             <div className='landing_page_welcome_primary_actual'>
               <div className='split1_header'>Welcome to the Pack Points Website!👋</div>
@@ -191,16 +181,6 @@ export const LandingPage = () => {
               </div>
             </div>
             <div className='aboutus_image'>
-              <div className='aboutus_dots'>
-                <div className='audot1'></div>
-                <div className='audot2'></div>
-                <div className='audot3'></div>
-                <div className='audot4'></div>
-                <div className='audot5'></div>
-                <div className='audot6'></div>
-                <div className='audot7'></div>
-                <div className='audot8'></div>
-              </div>
               <img src={main_image_2} alt='person looking at robot' className='main_image_2'/>
             </div>
           </div>
@@ -250,11 +230,19 @@ export const LandingPage = () => {
             </div>
             <div className='footer_content_right'>
               <div className='content_right_three'>
-                <div className='content_right_au'>About Us</div>
-                <div className='content_right_cal'>Calendar</div>
-                <div className='content_right_ig'>Image Gallery</div>
+                <div className='content_right_au' onClick={() => {
+                  window.location.href = 'https://unr.campuslabs.com/engage/'
+                }}>Pack Life</div>
+                <div className='content_right_cal' onClick={() => {
+                  navigate('calendar')
+                }}>Calendar</div>
+                <div className='content_right_ig' onClick={() => {
+                  navigate('info')
+                }}>Image Gallery</div>
               </div>
-              <div className='content_right_button'>
+              <div className='content_right_button' onClick={() => {
+                navigate('leaderboard');
+              }}>
                 <div className='right_button_con'>Leaderboard</div>
               </div>
             </div>
