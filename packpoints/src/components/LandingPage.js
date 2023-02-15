@@ -175,16 +175,12 @@ export const LandingPage = () => {
 
         <div className='landing_page_aboutus'>
           <div className='aboutus_header'>
-            <div className='header_info'>
-              <div className='header_text'>
-              About Us! 😊 
-              </div>
-            </div>
-            <div className='aboutus_image'>
-              <img src={main_image_2} alt='person looking at robot' className='main_image_2'/>
-            </div>
+          <img src={main_image_2} alt='person looking at robot' className='main_image_2'/>
           </div>
           <div className='aboutus_explanation'>
+            <div className='header_text'>
+              About Us! 😊 
+            </div>
             <div className='explanation_top'>
               <img src={questionmark} alt='question mark emoji' className='questionmark'/>
               <div className='explanation_top_text'>
@@ -248,7 +244,6 @@ export const LandingPage = () => {
             </div>
           </div>
         </div>
-        
       </div>
     </>
   )
