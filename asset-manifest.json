@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/packpoints/static/css/main.5d7db60e.css",
+    "main.css": "/packpoints/static/css/main.2255e112.css",
     "main.js": "/packpoints/static/js/main.f9d14f08.js",
     "static/js/787.8c94d411.chunk.js": "/packpoints/static/js/787.8c94d411.chunk.js",
     "static/media/peavine_4.jpg": "/packpoints/static/media/peavine_4.40dad5a38e7e25766502.jpg",
@@ -19,12 +19,12 @@
     "static/media/calendar_emoji.png": "/packpoints/static/media/calendar_emoji.67b8d21ca6b17979320e.png",
     "static/media/onehundred.png": "/packpoints/static/media/onehundred.d5247361eba36c983c5a.png",
     "index.html": "/packpoints/index.html",
-    "main.5d7db60e.css.map": "/packpoints/static/css/main.5d7db60e.css.map",
+    "main.2255e112.css.map": "/packpoints/static/css/main.2255e112.css.map",
     "main.f9d14f08.js.map": "/packpoints/static/js/main.f9d14f08.js.map",
     "787.8c94d411.chunk.js.map": "/packpoints/static/js/787.8c94d411.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d7db60e.css",
+    "static/css/main.2255e112.css",
     "static/js/main.f9d14f08.js"
   ]
 }
