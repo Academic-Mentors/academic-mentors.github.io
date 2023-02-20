@@ -96,3 +96,30 @@ export const sortByHall = (data, hall) => {
     return output;
 }
 
+const timeProcessing = (date, time) => {
+    date = date.split('T')[0].split('-')
+    time = time.replaceAll(' ', '').split('-')
+    let start = time[0].split(':')
+    let end = time[1].split(':')
+    return [new Date(date[0], date[1] - 1, date[2], start[0], start[1], 0), new Date(date[0], date[1] - 1, date[2], end[0], end[1], 0)]
+
+    // return [Date(date[0], date[1], date[2])]
+}
+
+
+export const grabStudyHours = (data) => {
+    let events = []
+    data = data[0]
+    for (let i = 1; i < data.length; i++) {
+        let event = data[i]
+        let startAndEnd = timeProcessing(event[2], event[3])
+        events.push({
+            title: event[0],
+            start: startAndEnd[0],
+            end: startAndEnd[1],
+            descr: '\n' + event[1] + '\n' + event[4] + '\n',
+            tier: event[5]
+        })
+    }
+    return events
+}

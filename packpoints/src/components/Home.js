@@ -4,10 +4,11 @@ import Select from 'react-select'
 
 import { Leaderboard } from './Leaderboard';
 
-import Peavine from '../assets/peavine_4.jpg'
-import Argenta from '../assets/peavine_2.jpg'
-import Canada from '../assets/peavine_3.jpg'
-import Original from '../assets/unr_original_2.jpg'
+import Peavine from '../assets/peavine_3.jpg'
+import GBH from '../assets/gb_h.JPG'
+import GBH_V from '../assets/gb_v.JPG'
+import Argenta from '../assets/argenta_h.JPG'
+import Original from '../assets/n_night.JPG'
 
 import './Home.css'
 
@@ -21,8 +22,8 @@ export const Home = () => {
 
   const options = [
     { value: 'Argenta Hall', label: 'Argenta', src: Argenta },
-    { value: 'Canada Hall', label: 'Canada', src: Canada },
-    { value: 'Great Basin Hall', label: 'Great Basin' },
+    { value: 'Canada Hall', label: 'Canada' },
+    { value: 'Great Basin Hall', label: 'Great Basin', src: GBH, src_mobile: GBH_V },
     { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper' },
     { value: 'Nevada LLC', label: 'Nevada LLC' },
     { value: 'Nye Hall', label: 'Nye' },
@@ -60,14 +61,15 @@ export const Home = () => {
       <div className='Home'>
         <img
           className="demo-bg"
-          src={hall.src ?? Original}
+          src={window.innerWidth > 1024 ? (hall.src ?? Original) : (hall.src_mobile ?? Original)}
           alt="peavine background"
+          style={{zIndex: "0"}}
         />
           <h1 className='header'>Welcome to Pack Points</h1>
           <div className='select'>
             <Select options={options} onChange={handleHallChange}/>
           </div>
-          <Leaderboard users={users}></Leaderboard>
+          <Leaderboard style={{zIndex: "100"}} users={users}></Leaderboard>
           {/* {(hall !== "") && <h1 className='hall-selector'>You have selected {hall.value}</h1>} */}
       </div>
     );

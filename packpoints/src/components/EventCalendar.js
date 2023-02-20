@@ -1,5 +1,5 @@
 
-import React, { useState, useCallback, useRef } from 'react'
+import React, { useState, useCallback, useRef, useEffect } from 'react'
 import ReactDOM from "react-dom";
 
 import format from "date-fns/format"
@@ -8,8 +8,8 @@ import startOfWeek from "date-fns/startOfWeek"
 import getDay from "date-fns/getDay"
 import { Calendar, dateFnsLocalizer, Views } from 'react-big-calendar'
 import { Overlay, Tooltip } from "react-bootstrap";
-import moment from 'moment'
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import { grabStudyHours } from '../database';
 
 const locales = {
     "en-US": require("date-fns/locale/en-US")
@@ -23,26 +23,7 @@ const localizer = dateFnsLocalizer({
     locales
 })
 
-const events = [
-    {
-        title: "Brock's Study Hours",
-        start: new Date(2023, 1, 10, 17, 30, 0),
-        end: new Date(2023, 1, 10, 19, 30, 0),
-        descr: "Brock's study hours yay"
-    },
-    {
-        title: "Katlin's Study Hours",
-        start: new Date(2023, 1, 20),
-        end: new Date(2023, 1, 20),
-        descr: "Katlin's study hours yay"
-    },
-    {
-        title: "Charlie's Study Hours",
-        start: new Date(2023, 1, 15),
-        end: new Date(2023, 1, 15),
-        descr: "Charlie's study hours yay"
-    }
-]
+// https://script.google.com/macros/s/AKfycbwDf8y4L-qGEXhIti2xxga98lxyPczJrBhfVH78vbKjjLD0llSvWz1_jYIe63Lo2r0H-Q/exec
 
 const TooltipContent = ({event}) => {
     return (
@@ -92,15 +73,24 @@ const Event = (event) => {
 
 export const EventCalendar = () => {
 
+    const [isLoaded, setIsLoaded] = useState(false)
+    const [events, setEvents] = useState([])
+    useEffect(() => {
+        fetch('https://script.google.com/macros/s/AKfycbwDf8y4L-qGEXhIti2xxga98lxyPczJrBhfVH78vbKjjLD0llSvWz1_jYIe63Lo2r0H-Q/exec')
+          .then(response => response.json())
+          .then((text) => {
+            let placeholder = text['GoogleSheetData'];
+            setEvents(grabStudyHours(placeholder));
+            setIsLoaded(true);
+          },
+          (error) => {
+            setIsLoaded(true);
+          })
+    }, [])
+
     const handleSelectEvent = useCallback((event) => {
         let info = event.title + ': ' + event.descr;
         window.alert(info)
-
-        return (
-            <div>
-                <h1>Hello World</h1>
-            </div>
-        )
     }, [])
 
 
