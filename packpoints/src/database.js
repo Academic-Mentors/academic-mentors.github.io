@@ -115,9 +115,10 @@ export const grabStudyHours = (data) => {
         let startAndEnd = timeProcessing(event[2], event[3])
         events.push({
             title: event[0],
+            location: event[1],
             start: startAndEnd[0],
             end: startAndEnd[1],
-            descr: '\n' + event[1] + '\n' + event[4] + '\n',
+            descr: event[4],
             tier: event[5]
         })
     }

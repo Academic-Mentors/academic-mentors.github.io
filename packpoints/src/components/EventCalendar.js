@@ -33,8 +33,9 @@ const TooltipContent = ({event}) => {
     return (
         <>
             <div className='tooltip-content'>
+                <p style={{fontSize: "large", backgroundColor: "white"}}>{event.event.location}</p>
                 <p>{event.event.descr}</p>
-                <p>{event.event.start.getHours() % 12}</p>
+                <p  style={{fontSize: "large", backgroundColor: "white"}}>{event.event.start.getHours() % 12}:{event.event.start.getMinutes() === 0 ? '00' : event.event.start.getMinutes()} to {event.event.end.getHours() % 12}:{event.event.end.getMinutes() === 0 ? '00' : event.event.end.getMinutes()}</p>
             </div>
         </>
     )
