@@ -1,2 +1,20 @@
-@import 'react-big-calendar/lib/sass/styles';
-@import 'react-big-calendar/lib/addons/dragAndDrop/styles';
+/* @import 'react-big-calendar/lib/sass/styles';
+@import 'react-big-calendar/lib/addons/dragAndDrop/styles'; */
+
+
+.tooltip-content {
+    background-color:#5380EA;
+    height: fit-content;
+    max-width: 14vw;
+}
+
+p {
+    margin: 0;
+}
+
+.tooltip-content-descr {
+    margin: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+}

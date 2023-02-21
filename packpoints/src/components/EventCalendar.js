@@ -11,6 +11,8 @@ import { Overlay, Tooltip } from "react-bootstrap";
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { grabStudyHours } from '../database';
 
+import './EventCalendar.css'
+
 const locales = {
     "en-US": require("date-fns/locale/en-US")
 }
@@ -25,12 +27,14 @@ const localizer = dateFnsLocalizer({
 
 // https://script.google.com/macros/s/AKfycbwDf8y4L-qGEXhIti2xxga98lxyPczJrBhfVH78vbKjjLD0llSvWz1_jYIe63Lo2r0H-Q/exec
 
+
 const TooltipContent = ({event}) => {
+    console.log(event)
     return (
         <>
-            <div style={{backgroundColor: "blue", height: "150px"}}>
-                <strong>{event.title}</strong>
-                <button>CLICK ME</button>
+            <div className='tooltip-content'>
+                <p>{event.event.descr}</p>
+                <p>{event.event.start.getHours() % 12}</p>
             </div>
         </>
     )
@@ -63,7 +67,7 @@ const Event = (event) => {
             placement="bottom"
             onHide={closeTooltip}
           >
-            <Tooltip id="test">
+            <Tooltip style={{zIndex: "100"}}id="test">
               <TooltipContent event={event} onClose={closeTooltip} />
             </Tooltip>
           </Overlay>
@@ -73,7 +77,6 @@ const Event = (event) => {
 
 export const EventCalendar = () => {
 
-    const [isLoaded, setIsLoaded] = useState(false)
     const [events, setEvents] = useState([])
     useEffect(() => {
         fetch('https://script.google.com/macros/s/AKfycbwDf8y4L-qGEXhIti2xxga98lxyPczJrBhfVH78vbKjjLD0llSvWz1_jYIe63Lo2r0H-Q/exec')
@@ -81,10 +84,8 @@ export const EventCalendar = () => {
           .then((text) => {
             let placeholder = text['GoogleSheetData'];
             setEvents(grabStudyHours(placeholder));
-            setIsLoaded(true);
           },
           (error) => {
-            setIsLoaded(true);
           })
     }, [])
 
@@ -102,7 +103,7 @@ export const EventCalendar = () => {
             endAccessor="end"
             defaultView={Views.MONTH}
             onSelectEvent={handleSelectEvent}
-            style={{height: 500, margin: "50px"}}
+            style={{height: "100vh", margin: "50px"}}
             tooltipAccessor={null}
             components={{event: Event}}
         />
