@@ -23,13 +23,13 @@ export const Home = () => {
 
   const options = [
     { value: 'Argenta Hall', label: 'Argenta', src: Argenta },
-    { value: 'Canada Hall', label: 'Canada', src: Placeholder },
+    { value: 'Canada Hall', label: 'Canada' },
     { value: 'Great Basin Hall', label: 'Great Basin', src: GBH, src_mobile: GBH_V },
-    { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper', src: Placeholder },
-    { value: 'Nevada LLC', label: 'Nevada LLC', src: Placeholder },
-    { value: 'Nye Hall', label: 'Nye', src: Placeholder },
+    { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper' },
+    { value: 'Nevada LLC', label: 'Nevada LLC' },
+    { value: 'Nye Hall', label: 'Nye' },
     { value: 'Peavine Hall', label: 'Peavine', src: Peavine },
-    { value: 'Sierra Hall', label: 'Sierra', src: Placeholder },
+    { value: 'Sierra Hall', label: 'Sierra' },
     { value: 'All Halls', label: 'All Halls', src: Original }
   ]
 
