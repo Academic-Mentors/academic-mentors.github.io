@@ -9,6 +9,7 @@ import GBH from '../assets/gb_h.JPG'
 import GBH_V from '../assets/gb_v.JPG'
 import Argenta from '../assets/argenta_h.JPG'
 import Original from '../assets/n_night.JPG'
+import Placeholder from '../assets/test_1.jpg'
 
 import './Home.css'
 
@@ -22,13 +23,13 @@ export const Home = () => {
 
   const options = [
     { value: 'Argenta Hall', label: 'Argenta', src: Argenta },
-    { value: 'Canada Hall', label: 'Canada' },
+    { value: 'Canada Hall', label: 'Canada', src: Placeholder },
     { value: 'Great Basin Hall', label: 'Great Basin', src: GBH, src_mobile: GBH_V },
-    { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper' },
-    { value: 'Nevada LLC', label: 'Nevada LLC' },
-    { value: 'Nye Hall', label: 'Nye' },
+    { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper', src: Placeholder },
+    { value: 'Nevada LLC', label: 'Nevada LLC', src: Placeholder },
+    { value: 'Nye Hall', label: 'Nye', src: Placeholder },
     { value: 'Peavine Hall', label: 'Peavine', src: Peavine },
-    { value: 'Sierra Hall', label: 'Sierra' },
+    { value: 'Sierra Hall', label: 'Sierra', src: Placeholder },
     { value: 'All Halls', label: 'All Halls', src: Original }
   ]
 
