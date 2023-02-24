@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/packpoints/static/css/main.f20d33cf.css",
-    "main.js": "/packpoints/static/js/main.d4f70fe1.js",
+    "main.js": "/packpoints/static/js/main.6c12b68e.js",
     "static/js/787.8c94d411.chunk.js": "/packpoints/static/js/787.8c94d411.chunk.js",
     "static/media/peavine_3.jpg": "/packpoints/static/media/peavine_3.3c7f7df6587dbcbe883a.jpg",
     "static/media/main_image.png": "/packpoints/static/media/main_image.c826b2d01aa4d9e45dcc.png",
@@ -12,6 +12,7 @@
     "static/media/february_monthly.jpeg": "/packpoints/static/media/february_monthly.e4ddabf50296762bcb19.jpeg",
     "static/media/argenta_h.JPG": "/packpoints/static/media/argenta_h.2a2e830d27f4213857be.JPG",
     "static/media/gb_h.JPG": "/packpoints/static/media/gb_h.7a339a89e8bd3e226192.JPG",
+    "static/media/test_1.jpg": "/packpoints/static/media/test_1.ac913ba2f7ebc178d2c3.jpg",
     "static/media/gb_v.JPG": "/packpoints/static/media/gb_v.d5cfac91010580c911c1.JPG",
     "static/media/n_night.JPG": "/packpoints/static/media/n_night.84079a1ed35d1a8656c6.JPG",
     "static/media/main_image_2.png": "/packpoints/static/media/main_image_2.9c87da7111f70f95b4a3.png",
@@ -21,11 +22,11 @@
     "static/media/onehundred.png": "/packpoints/static/media/onehundred.d5247361eba36c983c5a.png",
     "index.html": "/packpoints/index.html",
     "main.f20d33cf.css.map": "/packpoints/static/css/main.f20d33cf.css.map",
-    "main.d4f70fe1.js.map": "/packpoints/static/js/main.d4f70fe1.js.map",
+    "main.6c12b68e.js.map": "/packpoints/static/js/main.6c12b68e.js.map",
     "787.8c94d411.chunk.js.map": "/packpoints/static/js/787.8c94d411.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f20d33cf.css",
-    "static/js/main.d4f70fe1.js"
+    "static/js/main.6c12b68e.js"
   ]
 }
