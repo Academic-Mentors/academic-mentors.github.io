@@ -19,6 +19,7 @@ export const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [users, setUsers] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
+  const [monthlyUsers, setMonthlyUsers] = useState([]);
   const [hall, setHall] = useState("");
 
   const options = [
@@ -52,6 +53,20 @@ export const Home = () => {
         setError(error);
       })
     }, [])
+
+    useEffect(() => {
+      fetch('https://cdn.jsdelivr.net/gh/unrhc/packpoints/packpoints/month_data.txt')
+        .then(response => response.text())
+        .then((text) => {
+          setIsLoaded(true)
+          setUsers(sheetProcessing(text))
+          setAllUsers(sheetProcessing(text))
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        })
+      }, [])
 
   if (error) {
     return <div>Error: {error.message}</div>;
