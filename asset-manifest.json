@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/packpoints/static/css/main.759b354a.css",
-    "main.js": "/packpoints/static/js/main.3c7b78a4.js",
+    "main.js": "/packpoints/static/js/main.af683b22.js",
     "static/js/787.8c94d411.chunk.js": "/packpoints/static/js/787.8c94d411.chunk.js",
     "static/media/peavine_3.jpg": "/packpoints/static/media/peavine_3.3c7f7df6587dbcbe883a.jpg",
     "static/media/main_image.png": "/packpoints/static/media/main_image.c826b2d01aa4d9e45dcc.png",
@@ -22,11 +22,11 @@
     "static/media/onehundred.png": "/packpoints/static/media/onehundred.d5247361eba36c983c5a.png",
     "index.html": "/packpoints/index.html",
     "main.759b354a.css.map": "/packpoints/static/css/main.759b354a.css.map",
-    "main.3c7b78a4.js.map": "/packpoints/static/js/main.3c7b78a4.js.map",
+    "main.af683b22.js.map": "/packpoints/static/js/main.af683b22.js.map",
     "787.8c94d411.chunk.js.map": "/packpoints/static/js/787.8c94d411.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.759b354a.css",
-    "static/js/main.3c7b78a4.js"
+    "static/js/main.af683b22.js"
   ]
 }
