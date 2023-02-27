@@ -40,7 +40,7 @@ export const monthSetter = (dict, users) => {
     for (let i = 0; i < users.length; i++) {
         monthAccounts.push(users[i]);
         if (monthAccounts[monthAccounts.length - 1]['id'] in dict) {
-            monthAccounts[monthAccounts.length - 1]['points'] -= dict[monthAccounts[monthAccounts.length - 1]['id']];
+            monthAccounts[monthAccounts.length - 1]['points'] = monthAccounts[monthAccounts.length - 1]['points'] - dict[monthAccounts[monthAccounts.length - 1]['id']];
         }
     }
     return monthAccounts

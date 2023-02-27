@@ -19,7 +19,9 @@ export const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [users, setUsers] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
+  const [allMonthlyUsers, setAllMonthlyUsers] = useState([]);
   const [monthlyUsers, setMonthlyUsers] = useState([]);
+
   const [hall, setHall] = useState("");
   const [month, setMonth] = useState(false);
 
@@ -43,19 +45,23 @@ export const Home = () => {
   const handleHallChange = (selectedOption) => {
     setHall(selectedOption);
     console.log(`Option selected:`, selectedOption);
-    setUsers(sortByHall(allUsers, selectedOption));
+
+    if (month === true) {
+      setMonthlyUsers(sortByHall(allMonthlyUsers, selectedOption));
+    }
+    else {
+      setUsers(sortByHall(allUsers, selectedOption));
+    }
   }
 
   const handleTypeChange = (selectedOption) => {
     if (selectedOption['value'] === 'Monthly Standings') {
       setMonth(true);
       console.log(`Option selected:`, selectedOption);
-      console.log(monthlyUsers);
     }
     else {
       setMonth(false);
       console.log(`Option selected:`, selectedOption);
-      console.log(users);
     }
   }
 
@@ -78,7 +84,8 @@ export const Home = () => {
         .then(response => response.text())
         .then((text) => {
           let monthDict = monthProcessing(text);
-          setMonthlyUsers(monthSetter(monthDict, allUsers));
+          setAllMonthlyUsers(monthSetter(monthDict, allUsers));
+          setMonthlyUsers(monthSetter(monthDict, users));
         },
         (error) => {
           setError(error);
