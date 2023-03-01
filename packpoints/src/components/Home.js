@@ -87,7 +87,6 @@ export const Home = () => {
           setAllMonthlyUsers(monthSetter(monthDict, allUsers));
           setMonthlyUsers(monthSetter(monthDict, users));
           console.log(users)
-
         },
         (error) => {
           setError(error);

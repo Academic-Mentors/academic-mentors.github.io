@@ -38,12 +38,13 @@ export const monthProcessing = (text) => {
 export const monthSetter = (dict, users) => {
     let monthAccounts = [];
     for (let i = 0; i < users.length; i++) {
-        monthAccounts.push(users[i]);
+        let temp = JSON.parse(JSON.stringify(users[i]));
+        monthAccounts.push(temp)
         if (monthAccounts[monthAccounts.length - 1]['id'] in dict) {
             monthAccounts[monthAccounts.length - 1]['points'] = monthAccounts[monthAccounts.length - 1]['points'] - dict[monthAccounts[monthAccounts.length - 1]['id']];
         }
     }
-    return monthAccounts
+    return monthAccounts.sort( compare );
 }
 
 export const sortByHall = (data, hall) => {
