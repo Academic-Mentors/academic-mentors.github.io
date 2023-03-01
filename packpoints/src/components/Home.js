@@ -29,7 +29,7 @@ export const Home = () => {
     { value: 'Argenta Hall', label: 'Argenta', src: Argenta },
     { value: 'Canada Hall', label: 'Canada' },
     { value: 'Great Basin Hall', label: 'Great Basin', src: GBH, src_mobile: GBH_V },
-    { value: 'Manzanita/Juniper Hall', label: 'Manzanita/Juniper' },
+    { value: 'Manazanita/Juniper Hall', label: 'Manazanita/Juniper' },
     { value: 'Nevada LLC', label: 'Nevada LLC' },
     { value: 'Nye Hall', label: 'Nye' },
     { value: 'Peavine Hall', label: 'Peavine', src: Peavine },
@@ -86,6 +86,8 @@ export const Home = () => {
           let monthDict = monthProcessing(text);
           setAllMonthlyUsers(monthSetter(monthDict, allUsers));
           setMonthlyUsers(monthSetter(monthDict, users));
+          console.log(users)
+
         },
         (error) => {
           setError(error);
