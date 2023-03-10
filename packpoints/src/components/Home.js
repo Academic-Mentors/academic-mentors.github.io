@@ -1,6 +1,8 @@
 import { sortByHall, sheetProcessing, monthProcessing, monthSetter } from '.././database';
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select'
+import NavBar from './NavBar.js';
+
 
 import { Leaderboard } from './Leaderboard';
 

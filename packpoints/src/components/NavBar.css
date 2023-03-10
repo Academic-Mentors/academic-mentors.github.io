@@ -1,0 +1,12 @@
+.back-button {
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+.back-button:hover {
+    color: #5380EA;
+    cursor: pointer;
+}

@@ -5,9 +5,6 @@ import { LandingPage } from './components/LandingPage'
 
 import { Routes, Route, HashRouter } from 'react-router-dom'
 
-
-
-
 const App = () => {
   return (
     <div>

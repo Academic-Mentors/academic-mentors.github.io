@@ -10,6 +10,8 @@ import { Calendar, dateFnsLocalizer, Views } from 'react-big-calendar'
 import { Overlay, Tooltip } from "react-bootstrap";
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { grabStudyHours } from '../database';
+import NavBar from './NavBar.js'
+
 
 import './EventCalendar.css'
 
@@ -97,16 +99,19 @@ export const EventCalendar = () => {
 
 
     return (
-        <Calendar 
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-            defaultView={Views.MONTH}
-            onSelectEvent={handleSelectEvent}
-            style={{height: "100vh", margin: "50px"}}
-            tooltipAccessor={null}
-            components={{event: Event}}
-        />
+        <div>
+            <NavBar/>
+            <Calendar 
+                localizer={localizer}
+                events={events}
+                startAccessor="start"
+                endAccessor="end"
+                defaultView={Views.MONTH}
+                onSelectEvent={handleSelectEvent}
+                style={{height: "100vh", margin: "50px"}}
+                tooltipAccessor={null}
+                components={{event: Event}}
+            />
+        </div>
     )
 }
