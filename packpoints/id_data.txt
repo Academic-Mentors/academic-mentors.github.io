@@ -4,81 +4,95 @@
 299930 50 Argenta Hall
 748879 50 Argenta Hall
 520275 50 Argenta Hall
-20772 450 Nye Hall
+20772 650 Nye Hall
 589583 250 Great Basin Hall
 855715 50 Great Basin Hall
 179000 50 Great Basin Hall
-637953 50 Great Basin Hall
+637953 130 Great Basin Hall
 825759 50 Great Basin Hall
-468753 50 Great Basin Hall
+468753 130 Great Basin Hall
 259829 50 Argenta Hall
-32843 1250 Great Basin Hall
+32843 1900 Great Basin Hall
 292061 50 Great Basin Hall
-241751 550 Nevada LLC
+241751 750 Nevada LLC
 744455 830 Argenta Hall
 226103 130 Nye Hall
-426593 230 Canada Hall
-747322 1250 Great Basin Hall
-863264 230 Peavine Hall
+426593 430 Canada Hall
+747322 1530 Great Basin Hall
+863264 410 Peavine Hall
 735427 410 Peavine Hall
 317749 50 Great Basin Hall
-336230 50 Canada Hall
+336230 150 Canada Hall
 194825 50 Great Basin Hall
+892925 50 Nevada LLC
+104499 50 Nye Hall
 213438 80 Nye Hall
 218651 80 Nye Hall
 235558 160 Sierra Hall
-694582 160 Great Basin Hall
+694582 260 Great Basin Hall
 778277 80 Nevada LLC
 67845 80 Nye Hall
-772376 1460 Sierra Hall
-401485 180 Sierra Hall
-989977 360 Sierra Hall
-182591 280 Manazanita/Juniper Hall
+772376 1560 Sierra Hall
+401485 280 Sierra Hall
+989977 760 Sierra Hall
+182591 480 Manazanita/Juniper Hall
 728716 80 Sierra Hall
 517839 280 Sierra Hall
-701348 1820 Peavine Hall
-340263 880 Peavine Hall
+701348 1900 Peavine Hall
+340263 1060 Peavine Hall
 143693 80 Peavine Hall
 135743 80 Peavine Hall
 257733 80 Nye Hall
-716577 980 Peavine Hall
-890789 1080 Sierra Hall
+716577 1180 Peavine Hall
+890789 1580 Sierra Hall
 681111 80 Argenta Hall
-963665 80 Argenta Hall
+963665 160 Argenta Hall
 749738 180 Canada Hall
-949730 800 Sierra Hall
+458521 80 Sierra Hall
+467674 560 Argenta Hall
+567292 80 Peavine Hall
+311043 180 Great Basin Hall
+799467 180 Peavine Hall
+429460 180 Peavine Hall
+528208 80 Argenta Hall
+627963 80 Nevada LLC
+949730 1000 Sierra Hall
 970861 100 Nevada LLC
 992560 100 Nevada LLC
-454957 2100 Nye Hall
-10186 700 Argenta Hall
+454957 2400 Nye Hall
+10186 900 Argenta Hall
 552738 500 Nye Hall
-392801 900 Argenta Hall
-888870 700 Argenta Hall
+392801 1300 Argenta Hall
+888870 1100 Argenta Hall
 442101 600 Nye Hall
-320266 800 Nye Hall
+320266 1000 Nye Hall
 466474 100 Argenta Hall
-732367 1000 Argenta Hall
-791185 200 Nevada LLC
+732367 1300 Argenta Hall
+791185 300 Nevada LLC
 404662 400 Nevada LLC
-634899 700 Sierra Hall
-687831 200 Sierra Hall
-503419 200 Sierra Hall
+634899 900 Sierra Hall
+687831 300 Sierra Hall
+503419 300 Sierra Hall
 703571 100 Argenta Hall
 695804 100 Argenta Hall
-391321 300 Nevada LLC
+391321 400 Nevada LLC
 809720 100 Argenta Hall
 272821 500 Sierra Hall
-290040 800 Argenta Hall
+290040 1300 Argenta Hall
 301519 300 Nevada LLC
-938032 300 Argenta Hall
+938032 400 Argenta Hall
 683684 100 Sierra Hall
-799467 100 Peavine Hall
-429460 100 Peavine Hall
-509736 300 Argenta Hall
-919903 800 Argenta Hall
+509736 600 Argenta Hall
+919903 1300 Argenta Hall
 564814 100 Great Basin Hall
 378440 300 Nye Hall
 307990 100 Argenta Hall
-237324 200 Argenta Hall
+237324 300 Argenta Hall
 869947 200 Manzanita/Juniper Hall
-954407 200 Nye Hall
+954407 500 Nye Hall
+367579 100 Sierra Hall
+604945 100 Sierra Hall
+667245 100 Sierra Hall
+84532 100 Great Basin Hall
+124427 100 Argenta Hall
+980077 100 Sierra Hall
