@@ -68,7 +68,7 @@ export const Home = () => {
   }
 
   useEffect(() => {
-    fetch('https://cdn.jsdelivr.net/gh/unrhc/packpoints/packpoints/id_data.txt')
+    fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/id_data.txt')
       .then(response => response.text())
       .then((text) => {
         setIsLoaded(true)
@@ -82,7 +82,7 @@ export const Home = () => {
     }, [])
 
     useEffect(() => {
-      fetch('https://cdn.jsdelivr.net/gh/unrhc/packpoints/packpoints/month_data.txt')
+      fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/month_data.txt')
         .then(response => response.text())
         .then((text) => {
           let monthDict = monthProcessing(text);
