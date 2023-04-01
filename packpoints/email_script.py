@@ -55,7 +55,12 @@ for i in people.keys():
     print(people[i].name, people[i].email, people[i].score, people[i].hall, people[i].sid)
 
 f = open("id_data.txt", 'w')
+count = 0
 for person in people.keys():
+    if (people[person].score >= 400):
+        print(people[person].email)
+        count += 1
     s = str(people[person].sid) + ' ' + str(people[person].score) + ' ' + people[person].hall + '\n'
     f.write(s)
+print(count)
 
