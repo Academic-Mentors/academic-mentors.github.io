@@ -29,6 +29,7 @@
 311043 530 Great Basin Hall
 188977 50 Manzanita/Juniper Hall
 503243 50 Manzanita/Juniper Hall
+796400 50 Argenta Hall
 213438 80 Nye Hall
 218651 80 Nye Hall
 235558 160 Sierra Hall
