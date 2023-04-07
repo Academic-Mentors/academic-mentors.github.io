@@ -34,7 +34,6 @@ export const Home = () => {
   let welcome = "";
 
   let userId = localStorage.getItem('email');
-  userId = 'llew@nevada.unr.edu'
   if (!!userId) {
       const documentRef = doc(db, 'user_emails', userId);
       
