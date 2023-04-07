@@ -28,10 +28,10 @@ export const Home = () => {
 
   const [hall, setHall] = useState("");
   const [month, setMonth] = useState(false);
-
+  const [dbLoad, setDbLoad] = useState(false);
 
   console.log(db)
-  let welcome = "";
+  
 
   let userId = localStorage.getItem('email');
   if (!!userId) {
@@ -45,6 +45,7 @@ export const Home = () => {
         } else {
           console.log('No such document!');
         }
+        setDbLoad(true)
       };
       
       getDocument();
@@ -122,7 +123,7 @@ export const Home = () => {
 
   if (error) {
     return <div>Error: {error.message}</div>;
-  } else if (!isLoaded) {
+  } else if (!isLoaded || !dbLoad) {
     return <div className='Home'>Loading...</div>;
   } else {
     return (
