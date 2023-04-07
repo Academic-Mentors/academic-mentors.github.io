@@ -27,6 +27,14 @@
     padding: 3rem 20% 6rem 20%;
 }
 
+.welcome {
+    position: relative;
+    z-index: 9999;
+    color: white;
+    text-align: center;
+    margin-top: 0rem;
+}
+
 .demo-bg {
     opacity: 0.3;
     padding: 0;

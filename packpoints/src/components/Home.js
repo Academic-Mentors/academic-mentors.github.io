@@ -1,4 +1,6 @@
 import { sortByHall, sheetProcessing, monthProcessing, monthSetter } from '.././database';
+import { db } from ".././firebase";
+import { doc, getDoc } from 'firebase/firestore';
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select'
 import NavBar from './NavBar.js';
@@ -26,6 +28,30 @@ export const Home = () => {
 
   const [hall, setHall] = useState("");
   const [month, setMonth] = useState(false);
+
+
+  console.log(db)
+  let welcome = "";
+
+  let userId = localStorage.getItem('email');
+  userId = 'llew@nevada.unr.edu'
+  if (!!userId) {
+      const documentRef = doc(db, 'user_emails', userId);
+      
+      const getDocument = async () => {
+        const docSnap = await getDoc(documentRef);
+        if (docSnap.exists()) {
+          console.log(docSnap.data()[userId]);
+          localStorage.setItem("studentid", docSnap.data()[userId]);
+        } else {
+          console.log('No such document!');
+        }
+      };
+      
+      getDocument();
+  }
+
+
 
   const options = [
     { value: 'Argenta Hall', label: 'Argenta', src: Argenta },
@@ -102,6 +128,7 @@ export const Home = () => {
   } else {
     return (
       <div className='Home'>
+        <h1 className='welcome'>{"Welcome " + localStorage.getItem("name") + ", your ID number is " + localStorage.getItem("studentid") + "!"}</h1>
         <img
           className="demo-bg"
           src={window.innerWidth > 1024 ? (hall.src ?? Original) : (hall.src_mobile ?? Original)}

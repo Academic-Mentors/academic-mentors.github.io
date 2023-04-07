@@ -2,6 +2,15 @@ import requests
 import random
 # from email_test import send_email
 
+import firebase_admin
+from firebase_admin import credentials, firestore
+
+cred = credentials.Certificate('secret.json')
+firebase_admin.initialize_app(cred)
+db = firestore.client()
+
+doc_ref = db.collection('user_emails').document('data')
+
 class Resident:
     def __init__(self, name, email, score, hall, sid):
         self.name = name
@@ -53,6 +62,19 @@ for i in people.keys():
         print(s)
         f.write(s)
     print(people[i].name, people[i].email, people[i].score, people[i].hall, people[i].sid)
+
+with open('emails.txt', 'r') as email_file:
+    # Create a dictionary to store the email and ID pairs
+    email_data = {}
+    for line in email_file:
+        # Split the line into email and ID
+        email, idnum = line.strip().split(' ')
+
+        # Add the email and ID to the dictionary
+        email_data[email] = idnum
+        doc_ref = db.collection('user_emails').document(email)
+        doc_ref.set({email: idnum})
+email_file.close()
 
 f = open("id_data.txt", 'w')
 count = 0

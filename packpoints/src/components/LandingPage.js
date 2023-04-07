@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { useNavigate } from 'react-router-dom'
+import {auth, provider} from ".././firebase";
+import {signInWithPopup} from "firebase/auth"
 
 import main_image from '../assets/main_image.png'
 import main_image_2 from '../assets/main_image_2.png'
@@ -16,6 +18,19 @@ import './LandingPage.css'
 export const LandingPage = () => {
 
   const navigate = useNavigate();
+  const [value, setValue] = useState('')
+  const handleSignIn = () => {
+    signInWithPopup(auth, provider).then((data) => {
+      setValue(data.user.email)
+      localStorage.setItem("email", data.user.email)
+      localStorage.setItem("name", data.user.displayName)
+      navigate('leaderboard')
+    })
+  }
+
+  useEffect(() => {
+    setValue(localStorage.getItem('email'))
+  })
 
   return (
     <>
@@ -67,9 +82,10 @@ export const LandingPage = () => {
               }}>Image Gallery</div>
             </div>
             <div className='landing_page_header_right_button' onClick={() => {
-              navigate('leaderboard'); 
+              handleSignIn();
+              // navigate('leaderboard'); 
             }}>
-              <div className='landing_page_header_right_button_text'>Leaderboard</div>
+              <div className='landing_page_header_right_button_text'>Sign In</div>
             </div>
           </div>
         </div>
