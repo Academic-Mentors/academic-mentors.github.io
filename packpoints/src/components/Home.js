@@ -34,7 +34,7 @@ export const Home = () => {
   
 
   let userId = localStorage.getItem('email');
-  userId = "ctryan@nevada.unr.edu"
+  userId = "ellieb@nevada.unr.edu"
   if (!!userId) {
       const documentRef = doc(db, 'user_emails', userId);
       
@@ -135,7 +135,9 @@ export const Home = () => {
     return (
       <div className='Home'>
         <h1 className='welcome'>{"Welcome " + localStorage.getItem("name") + ", your ID number is " + localStorage.getItem("studentid") + "!"}</h1>
-        {localStorage.getItem("points") > 400 ? <h1 className='welcome'>{"You have " + localStorage.getItem("points") + " points!"}</h1> : <h1 className='welcome'>Brother</h1>}
+        {/* {localStorage.getItem("points") > 400 ? <h1 className='welcome'>{"You have " + localStorage.getItem("points") + " points!"}</h1> : <h1 className='welcome'>Brother</h1>} */}
+        <h1 className='welcome'>{"You have " + localStorage.getItem("points") + " points!"}</h1>
+        <h1 className='welcome'>{(Math.floor(localStorage.getItem("points") / 400) === 1) ? "This means you have 1 entry into the final prizes!" : ("This means you have " + Math.floor(localStorage.getItem("points") / 400) + " entries into the final prizes!")}</h1>
         <img
           className="demo-bg"
           src={window.innerWidth > 1024 ? (hall.src ?? Original) : (hall.src_mobile ?? Original)}

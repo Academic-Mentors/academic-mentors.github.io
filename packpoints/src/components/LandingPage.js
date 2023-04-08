@@ -71,7 +71,7 @@ export const LandingPage = () => {
           </div>
           <div className='landing_page_header_right'>
             <div className='landing_page_header_right_three'>
-              <div className='landing_page_header_right_three_left' onClick={() => {
+              {/* <div className='landing_page_header_right_three_left' onClick={() => {
                 window.location.href = 'https://unr.campuslabs.com/engage/'
               }}>Pack Life</div>
               <div className='landing_page_header_right_three_middle' onClick={() => {
@@ -79,7 +79,7 @@ export const LandingPage = () => {
               }}>Calendar</div>
               <div className='landing_page_header_right_three_right' onClick={() => {
                 navigate('info')
-              }}>Image Gallery</div>
+              }}>Image Gallery</div> */}
             </div>
             <div className='landing_page_header_right_button' onClick={() => {
               handleSignIn();
@@ -157,7 +157,7 @@ export const LandingPage = () => {
           <div className='emojis_middle'>
             <div className='emojis_middle_image'>
                 <img src={calendar} alt='emoji of calendar' className='calendar' onClick={() => {
-                  navigate('calendar')
+                  handleSignIn()
                 }}/>
               </div>
               <div className='emojis_middle_text'>
@@ -173,7 +173,7 @@ export const LandingPage = () => {
             <div className='right_emojis_trophy'>
               <div className='emojis_right_image'>
                 <img src={trophy} alt='emoji of trophy' className='trophy' onClick={() => {
-                  navigate('leaderboard')
+                  handleSignIn()
                 }}/>
               </div>
             </div>
