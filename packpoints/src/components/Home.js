@@ -34,6 +34,7 @@ export const Home = () => {
   
 
   let userId = localStorage.getItem('email');
+  userId = "ctryan@nevada.unr.edu"
   if (!!userId) {
       const documentRef = doc(db, 'user_emails', userId);
       
@@ -41,6 +42,11 @@ export const Home = () => {
         const docSnap = await getDoc(documentRef);
         if (docSnap.exists()) {
           console.log(docSnap.data()[userId]);
+          for (let i = 0; i < allUsers.length; i++) {
+            if (allUsers[i].id === docSnap.data()[userId]) {
+              localStorage.setItem("points", allUsers[i].points);
+            }
+          }
           localStorage.setItem("studentid", docSnap.data()[userId]);
         } else {
           console.log('No such document!');
@@ -129,6 +135,7 @@ export const Home = () => {
     return (
       <div className='Home'>
         <h1 className='welcome'>{"Welcome " + localStorage.getItem("name") + ", your ID number is " + localStorage.getItem("studentid") + "!"}</h1>
+        {localStorage.getItem("points") > 400 ? <h1 className='welcome'>{"You have " + localStorage.getItem("points") + " points!"}</h1> : <h1 className='welcome'>Brother</h1>}
         <img
           className="demo-bg"
           src={window.innerWidth > 1024 ? (hall.src ?? Original) : (hall.src_mobile ?? Original)}
