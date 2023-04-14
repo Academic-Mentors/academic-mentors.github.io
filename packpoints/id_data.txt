@@ -12,13 +12,13 @@
 825759 50 Great Basin Hall
 468753 180 Great Basin Hall
 259829 50 Argenta Hall
-32843 2750 Great Basin Hall
+32843 2850 Great Basin Hall
 292061 50 Great Basin Hall
-241751 1500 Nevada LLC
+241751 1600 Nevada LLC
 744455 930 Argenta Hall
 226103 130 Nye Hall
 426593 830 Canada Hall
-747322 1910 Great Basin Hall
+747322 2010 Great Basin Hall
 863264 570 Peavine Hall
 735427 490 Peavine Hall
 317749 50 Great Basin Hall
@@ -40,9 +40,9 @@
 694582 260 Great Basin Hall
 778277 80 Nevada LLC
 67845 160 Nye Hall
-772376 2140 Sierra Hall
+772376 2240 Sierra Hall
 401485 780 Sierra Hall
-989977 1060 Sierra Hall
+989977 1160 Sierra Hall
 182591 880 Manazanita/Juniper Hall
 728716 80 Sierra Hall
 517839 380 Sierra Hall
@@ -51,7 +51,7 @@
 143693 80 Peavine Hall
 135743 80 Peavine Hall
 257733 80 Nye Hall
-716577 1660 Peavine Hall
+716577 1760 Peavine Hall
 890789 2280 Sierra Hall
 681111 80 Argenta Hall
 963665 160 Argenta Hall
@@ -63,7 +63,7 @@
 900668 80 Argenta Hall
 795162 80 Argenta Hall
 77304 80 Manazanita/Juniper Hall
-954407 1280 Nye Hall
+954407 1380 Nye Hall
 301519 380 Nevada LLC
 799467 180 Peavine Hall
 429460 180 Peavine Hall
@@ -75,31 +75,31 @@
 10186 1200 Argenta Hall
 552738 600 Nye Hall
 392801 1600 Argenta Hall
-888870 1300 Argenta Hall
+888870 1400 Argenta Hall
 442101 800 Nye Hall
 320266 1200 Nye Hall
 466474 100 Argenta Hall
-732367 2100 Argenta Hall
+732367 2200 Argenta Hall
 791185 300 Nevada LLC
 404662 400 Nevada LLC
-634899 1000 Sierra Hall
+634899 1100 Sierra Hall
 687831 600 Sierra Hall
-503419 400 Sierra Hall
+503419 500 Sierra Hall
 703571 100 Argenta Hall
 695804 100 Argenta Hall
 391321 400 Nevada LLC
 809720 200 Argenta Hall
 272821 500 Sierra Hall
 290040 1500 Argenta Hall
-938032 600 Argenta Hall
+938032 700 Argenta Hall
 683684 100 Sierra Hall
 509736 700 Argenta Hall
-919903 2100 Argenta Hall
+919903 2200 Argenta Hall
 564814 100 Great Basin Hall
 378440 300 Nye Hall
 307990 100 Argenta Hall
-237324 500 Argenta Hall
-869947 200 Manzanita/Juniper Hall
+237324 600 Argenta Hall
+869947 300 Manzanita/Juniper Hall
 367579 300 Sierra Hall
 604945 100 Sierra Hall
 667245 100 Sierra Hall
@@ -112,5 +112,5 @@
 319244 100 Nye Hall
 78955 200 Manzanita/Juniper Hall
 527663 100 Manzanita/Juniper Hall
-420909 300 Manzanita/Juniper Hall
+420909 400 Manzanita/Juniper Hall
 144324 100 Manzanita/Juniper Hall
