@@ -1,1 +1,5 @@
 782144 230 Argenta Hall
+823467 230 Nye Hall
+857855 230 Sierra Hall
+922109 230 Nye Hall
+620077 80 Great Basin Hall
