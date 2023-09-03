@@ -1,5 +1,6 @@
 import requests
 import random
+import datetime
 # from email_test import send_email
 
 import firebase_admin
@@ -10,6 +11,8 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 doc_ref = db.collection('user_emails').document('data')
+doc_points_ref = db.collection('id_data').document('data')
+doc_month_ref = db.collection('month_data').document('data')
 
 class Resident:
     def __init__(self, name, email, score, hall, sid):
@@ -84,5 +87,45 @@ for person in people.keys():
         count += 1
     s = str(people[person].sid) + ' ' + str(people[person].score) + ' ' + people[person].hall + '\n'
     f.write(s)
-print(count)
+f.close()
 
+try:
+    with open('id_data.txt', 'r') as i_file:
+        id_data = {}
+        for line in i_file:
+            stripped = line.strip().split(' ')
+            idnum = stripped[0]
+            keyval = stripped[1] + ';' + ' '.join(stripped[2:])
+            id_data[idnum] = keyval
+            doc_points_ref = db.collection('id_data').document(idnum)
+            doc_points_ref.set({idnum: keyval})
+except Exception as e:
+    print(f"An error occurred: {e}")
+i_file.close()
+
+
+current_date = datetime.datetime.now()
+current_month = current_date.month
+
+try:
+    with open('active_month.txt', 'r') as f:
+        lines = f.readlines()
+        month = lines[0]
+except Exception as e:
+    print(f"An error occurred: {e}")
+f.close()
+
+if int(current_month) != int(month):
+    with open('active_month.txt', 'w') as f:
+        f.write(str(current_month))
+    f.close()
+    with open('id_data.txt', 'r') as month_file:
+        id_data = {}
+        for line in month_file:
+            stripped = line.strip().split(' ')
+            idnum = stripped[0]
+            keyval = stripped[1] + ';' + ' '.join(stripped[2:])
+            id_data[idnum] = keyval
+            doc_points_ref = db.collection('month_data').document(idnum)
+            doc_points_ref.set({idnum: keyval})
+    month_file.close()

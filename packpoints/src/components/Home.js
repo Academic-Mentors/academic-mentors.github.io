@@ -1,6 +1,6 @@
 import { sortByHall, sheetProcessing, monthProcessing, monthSetter } from '.././database';
 import { db } from ".././firebase";
-import { doc, getDoc } from 'firebase/firestore';
+import { doc, getDoc, collection, getDocs } from 'firebase/firestore';
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select'
 import NavBar from './NavBar.js';
@@ -31,6 +31,72 @@ export const Home = () => {
   const [dbLoad, setDbLoad] = useState(false);
 
   console.log(db)
+
+  const collectionRef = collection(db, 'id_data');
+  // const monthCollectionRef = collection(db, 'month_data');
+
+  useEffect(() => {
+    async function getAllDocuments() {
+      try {
+        const querySnapshot = await getDocs(collectionRef);
+        const data = [];
+
+        querySnapshot.forEach(doc => {
+          const parsed = doc.data()[doc.id].split(';')
+          data.push({ id: doc.id, points: parseInt(parsed[0]), hall: parsed[1] });
+        });
+        data.sort((a, b) => b.points - a.points);
+        setAllUsers(data); // Update state with the fetched data
+        setUsers(data)
+        setIsLoaded(true)
+
+      } catch (error) {
+        console.error('Error getting documents:', error);
+      }
+      // async function getAllMonthDocuments() {
+      //   try {
+      //     const querySnapshot = await getDocs(monthCollectionRef);
+      //     const data = [];
+  
+      //     querySnapshot.forEach(doc => {
+      //       const parsed = doc.data()[doc.id].split(';')
+      //       data.push({ id: doc.id, points: parseInt(parsed[0]), hall: parsed[1] });
+      //     });
+      //     data.sort((a, b) => b.points - a.points);
+      //     setAllUsers(data); // Update state with the fetched data
+      //     setUsers(data)
+      //     setIsLoaded(true)
+  
+      //   } catch (error) {
+      //     console.error('Error getting documents:', error);
+      //   }
+    }
+
+    getAllDocuments(); // Call the function to fetch data when the component mounts
+  }, []);
+
+  useEffect(() => {
+    async function getAllDocuments() {
+      try {
+        const querySnapshot = await getDocs(collectionRef);
+        const data = [];
+
+        querySnapshot.forEach(doc => {
+          const parsed = doc.data()[doc.id].split(';')
+          data.push({ id: doc.id, points: parseInt(parsed[0]), hall: parsed[1] });
+        });
+        data.sort((a, b) => b.points - a.points);
+        setAllUsers(data); // Update state with the fetched data
+        setUsers(data)
+        setIsLoaded(true)
+
+      } catch (error) {
+        console.error('Error getting documents:', error);
+      }
+    }
+
+    getAllDocuments(); // Call the function to fetch data when the component mounts
+  }, []);
   
 
   let userId = localStorage.getItem('email');
@@ -98,33 +164,33 @@ export const Home = () => {
     }
   }
 
-  useEffect(() => {
-    fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/id_data.txt')
-      .then(response => response.text())
-      .then((text) => {
-        setIsLoaded(true)
-        setUsers(sheetProcessing(text))
-        setAllUsers(sheetProcessing(text))
-      },
-      (error) => {
-        setIsLoaded(true);
-        setError(error);
-      })
-    }, [])
+  // useEffect(() => {
+  //   fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/id_data.txt')
+  //     .then(response => response.text())
+  //     .then((text) => {
+  //       setIsLoaded(true)
+  //       setUsers(sheetProcessing(allUsersData))
+  //       setAllUsers(sheetProcessing(allUsersData))
+  //     },
+  //     (error) => {
+  //       setIsLoaded(true);
+  //       setError(error);
+  //     })
+  //   }, [])
 
-    useEffect(() => {
-      fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/month_data.txt')
-        .then(response => response.text())
-        .then((text) => {
-          let monthDict = monthProcessing(text);
-          setAllMonthlyUsers(monthSetter(monthDict, allUsers));
-          setMonthlyUsers(monthSetter(monthDict, users));
-          console.log(users)
-        },
-        (error) => {
-          setError(error);
-        })
-      }, [isLoaded])
+  //   useEffect(() => {
+  //     fetch('https://cdn.jsdelivr.net/gh/Academic-Mentors/packpoints/packpoints/month_data.txt')
+  //       .then(response => response.text())
+  //       .then((text) => {
+  //         let monthDict = monthProcessing(text);
+  //         setAllMonthlyUsers(monthSetter(monthDict, allUsers));
+  //         setMonthlyUsers(monthSetter(monthDict, users));
+  //         console.log(users)
+  //       },
+  //       (error) => {
+  //         setError(error);
+  //       })
+  //     }, [isLoaded])
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -133,6 +199,7 @@ export const Home = () => {
   } else {
     return (
       <div className='Home'>
+        {console.log(allUsers)}
         <h1 className='welcome'>{"Welcome " + localStorage.getItem("name") + ", your ID number is " + localStorage.getItem("studentid") + "!"}</h1>
         {/* {localStorage.getItem("points") > 400 ? <h1 className='welcome'>{"You have " + localStorage.getItem("points") + " points!"}</h1> : <h1 className='welcome'>Brother</h1>} */}
         <h1 className='welcome'>{"You have " + localStorage.getItem("points") + " points!"}</h1>
