@@ -1,0 +1,5 @@
+cd /Users/clipon/packpoints/packpoints
+python3 email_script.py
+git add .
+git commit -m "adding the good good"
+git push
