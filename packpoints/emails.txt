@@ -524,3 +524,6 @@ isisburgess@nevada.unr.edu 108969
 jbrower@nevada.unr.edu 677468
 adanamidis@nevada.unr.edu 758376
 rwojack@nevada.unr.edu 821354
+gcano22@nevada.unr.edu 86219
+gfrias.1436@nevada.unr.edu 139540
+tlarreau@nevada.unr.edu 471803
