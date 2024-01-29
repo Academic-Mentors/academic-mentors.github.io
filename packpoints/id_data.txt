@@ -1,5 +1,1 @@
-799802 80 Great Basin Hall
-908664 80 Peavine Hall
-465338 80 Nevada LLC
-992838 80 Argenta Hall
-166444 100 Great Basin Hall
+782144 100 Argenta Hall
