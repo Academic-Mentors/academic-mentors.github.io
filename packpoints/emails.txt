@@ -609,3 +609,6 @@ gtordoff@nevada.unr.edu 953396
 dfarrimond@nevada.unr.edu 669999
 sbroadwater@nevada.unr.edu 783858
 cdouglas@nevada.unr.edu 948029
+ellasnyder@nevada.unr.edu 978334
+kyrasmith@nevada.unr.edu 65928
+baileywheeler@nevada.unr.edu 169040
