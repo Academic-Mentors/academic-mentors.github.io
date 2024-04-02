@@ -137,6 +137,11 @@
 930153 80 Argenta Hall
 868061 80 Sierra Hall
 746155 80 Argenta Hall
+999647 80 Argenta Hall
+801119 80 Argenta Hall
+10477 80 Argenta Hall
+400927 80 Argenta Hall
+463128 80 Argenta Hall
 738302 100 Great Basin Hall
 998696 100 Sierra Hall
 617824 1900 Manzanita/Juniper Hall
